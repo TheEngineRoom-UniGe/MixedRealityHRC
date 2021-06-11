@@ -1,0 +1,9 @@
+<launch>
+    <rosparam file="$(find panda_moveit)/config/params.yaml" command="load"/>
+    
+    <node name="server_endpoint" pkg="panda_moveit" type="server_endpoint.py" args="--wait" output="screen" respawn="true" />
+    <node name="planner" pkg="panda_moveit" type="trajectory_planner.py" args="--wait" output="screen"/>
+    <node name="joint_states_service" pkg="panda_moveit" type="joint_states_service.py" output="screen" />
+    
+    <include file="$(find panda_moveit_config)/launch/demo.launch" />
+</launch>
