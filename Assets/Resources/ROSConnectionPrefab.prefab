@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7035482559422007580}
   - component: {fileID: -8687390375473108289}
   - component: {fileID: -8509418745753003518}
+  - component: {fileID: -5121574534800146220}
   m_Layer: 0
   m_Name: ROSConnectionPrefab
   m_TagString: Untagged
@@ -45,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7acef0b79454c9b4dae3f8139bc4ba77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rosIPAddress: 130.251.13.158
+  rosIPAddress: 130.251.13.172
   rosPort: 10000
   overrideUnityIP: 
   unityPort: 5005
@@ -65,6 +66,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &-8509418745753003518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020239667676184090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e22dfed9de9543ce99aa7e1ab505588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5121574534800146220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

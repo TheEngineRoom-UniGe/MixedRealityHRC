@@ -33,6 +33,7 @@ catkin_install_python(PROGRAMS
   scripts/joint_trajectory_client.py
   scripts/trajectory_planner.py
   scripts/joint_states_service.py
+  scripts/plan_manager.py
   scripts/server_endpoint.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

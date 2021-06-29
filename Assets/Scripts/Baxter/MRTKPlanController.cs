@@ -8,6 +8,7 @@ using Transform = UnityEngine.Transform;
 using Vector3 = UnityEngine.Vector3;
 
 using UnityEngine;
+using Microsoft.MixedReality.Toolkit.UI;
 
 public class MRTKPlanController : MonoBehaviour
 {
@@ -16,17 +17,15 @@ public class MRTKPlanController : MonoBehaviour
     // Timing variables for rendering trajectory
     private float jointAssignmentWaitRest = 0.01f;
     private float jointAssignmentWait = 0.005f;
-    private float poseAssignmentWait = 0.25f;
     private float oneSecondWait = 1.0f;
-    private float handoverPoseWait = 5.0f;
+    private float placeWait = 5.0f;
+    private float toolHandoverPoseWait = 10.0f;
+    private float componentHandoverPoseWait = 5.0f;
 
     // Offset variables for picking and placing objects
     private readonly Vector3 liftOffset = Vector3.up * 0.1f;
+    private readonly Vector3 dropOffset = Vector3.up * 0.02f;
 
-    // Offset variables for spawning robot correctly
-    private readonly Vector3 depthOffset = Vector3.forward * 0.15f;
-    private readonly Vector3 heightOffset = Vector3.up * 0.285f;
-    
     // Scene objects (robot and interactables)
     private GameObject baxter;
     private GameObject[] pickPoses;
@@ -42,6 +41,8 @@ public class MRTKPlanController : MonoBehaviour
     // Other scene objects (buttons, marker)
     private GameObject ImageTarget;
     private GameObject[] buttons;
+    private GameObject depthOffsetSlider;
+    private GameObject heightOffsetSlider;
     
     // Hardcoded variables needed for referencing joints indices
     private double[] restPosition;
@@ -49,25 +50,30 @@ public class MRTKPlanController : MonoBehaviour
     int[] rightIndices = { 11, 12, 9, 10, 13, 14, 15 };
 
     // Utility variables
-    int currentPickID = 0;
-    int currentToolID = 0;
+    Vector3[] pickInitialPositions;
+    Quaternion[] pickInitialRotations;
+    Vector3[] toolsInitialPositions;
+    Quaternion[] toolsInitialRotations;
+    Queue pickIdQueue;
+    Queue toolIdQueue;
 
     private Vector3[] objectsGraspOffsets =
     {
         new Vector3(0.05f, 0, -0.05f),
+        new Vector3(0,-0.015f,0),
         Vector3.zero,
-        Vector3.zero,
-        Vector3.zero,
-        Vector3.zero,
-        Vector3.zero,
+        new Vector3(-0.03f, 0, -0.06f),
+        new Vector3(-0.03f, 0, -0.06f),
+        new Vector3(-0.03f, 0, -0.06f),
         Vector3.zero,
         Vector3.zero,
     };
 
     private Vector3[] toolsGraspOffsets =
     {
-        Vector3.forward * 0.025f,
         Vector3.forward * -0.1f,
+        Vector3.forward * 0.025f,
+        Vector3.zero,
     };
 
     private enum Poses
@@ -77,7 +83,6 @@ public class MRTKPlanController : MonoBehaviour
         PickUp,
         Move,
         Place,
-        Liftup,
         Return
     };
 
@@ -130,6 +135,22 @@ public class MRTKPlanController : MonoBehaviour
         GoToRestPosition("both");
     }
 
+    BaxterMoveitJoints InitialJointConfig(string arm)
+    {
+        BaxterMoveitJoints joints = new BaxterMoveitJoints();
+        var indices = (arm == "left") ? leftIndices : rightIndices;
+
+        joints.joint_00 = Mathf.Rad2Deg * (float)restPosition[indices[0]];
+        joints.joint_01 = Mathf.Rad2Deg * (float)restPosition[indices[1]];
+        joints.joint_02 = Mathf.Rad2Deg * (float)restPosition[indices[2]];
+        joints.joint_03 = Mathf.Rad2Deg * (float)restPosition[indices[3]];
+        joints.joint_04 = Mathf.Rad2Deg * (float)restPosition[indices[4]];
+        joints.joint_05 = Mathf.Rad2Deg * (float)restPosition[indices[5]];
+        joints.joint_06 = Mathf.Rad2Deg * (float)restPosition[indices[6]];
+
+        return joints;
+    }
+
     public void GoToRestPosition(string whichArm)
     {
         if (whichArm == "left")
@@ -154,16 +175,7 @@ public class MRTKPlanController : MonoBehaviour
         {
             target[i] = Mathf.Rad2Deg * (float)restPosition[indices[i]];
         }
-        var currentJointConfig = CurrentJointConfig(arm);
-        float[] lastJointState = {
-                (float)currentJointConfig.joint_00,
-                (float)currentJointConfig.joint_01,
-                (float)currentJointConfig.joint_02,
-                (float)currentJointConfig.joint_03,
-                (float)currentJointConfig.joint_04,
-                (float)currentJointConfig.joint_05,
-                (float)currentJointConfig.joint_06,
-        };
+        float[] lastJointState = {0,0,0,0,0,0,0}; 
         var steps = 100;
         var jointArticulationBodies = leftJointArticulationBodies;
         if(arm == "right")
@@ -184,83 +196,98 @@ public class MRTKPlanController : MonoBehaviour
         OpenGripper(arm);
     }
 
-    BaxterMoveitJoints CurrentJointConfig(string arm)
-    {
-        BaxterMoveitJoints joints = new BaxterMoveitJoints();
-        var jointArticulationBodies = leftJointArticulationBodies;
-        if(arm == "right")
-        {
-            jointArticulationBodies = rightJointArticulationBodies;
-        }
-
-        joints.joint_00 = jointArticulationBodies[0].xDrive.target;
-        joints.joint_01 = jointArticulationBodies[1].xDrive.target;
-        joints.joint_02 = jointArticulationBodies[2].xDrive.target;
-        joints.joint_03 = jointArticulationBodies[3].xDrive.target;
-        joints.joint_04 = jointArticulationBodies[4].xDrive.target;
-        joints.joint_05 = jointArticulationBodies[5].xDrive.target;
-        joints.joint_06 = jointArticulationBodies[6].xDrive.target;
-
-        return joints;
-    }
-
     // Pick and place service request
     public TrajectoryServiceRequest PickAndPlaceService(int ID)
     {
-        currentPickID = ID;
+        pickIdQueue.Enqueue(ID);
         TrajectoryServiceRequest request = new TrajectoryServiceRequest();
-        request.operation = "pickandplace";
-
-        var pickPosition = pickPoses[ID].transform.localPosition + liftOffset + objectsGraspOffsets[ID];
-
+        request.operation = "pick_and_place";
         string arm = "left";
+
+        // Pick Pose
+        var pickPosition = pickPoses[ID].transform.localPosition + liftOffset + objectsGraspOffsets[ID];
+        var pickOrientation = Quaternion.Euler(180, 0, 0).To<FLU>();
+        request.pick_pose = new RosMessageTypes.Geometry.Pose
+        {
+            position = (pickPosition).To<FLU>(),
+            orientation = pickOrientation
+        };
+
+        // Place Pose
         var placeObj = placePoses[0];
-        if(pickPosition.x > 0)
+        if (pickPosition.x > 0)
         {
             placeObj = placePoses[1];
             arm = "right";
         }
         var placePosition = placeObj.transform.localPosition + liftOffset;
-
-        request.arm = arm;
-        request.joints_input = CurrentJointConfig(arm);
-        // Pick Pose
-        request.pick_pose = new RosMessageTypes.Geometry.Pose
+        var placeOrientation = pickOrientation;
+        if (ID == 1 || ID == 2)
         {
-            position = (pickPosition).To<FLU>(),
-            orientation = Quaternion.Euler(180, 0, 0).To<FLU>()
-        };
-
-        // Place Pose
+            placeOrientation = Quaternion.Euler(180, 90, 0).To<FLU>();
+        }
         request.place_pose = new RosMessageTypes.Geometry.Pose
         {
             position = (placePosition).To<FLU>(),
-            orientation = Quaternion.Euler(180, 0, 0).To<FLU>()
+            orientation = placeOrientation
         };
+
+        request.arm = arm;
+        request.joints_input = InitialJointConfig(arm);
 
         return request;
     }
 
-    // Handover service request
-    public TrajectoryServiceRequest HandoverService(int ID)
+    public TrajectoryServiceRequest ComponentHandoverService(int ID)
     {
-        currentToolID = ID;
-        
+        pickIdQueue.Enqueue(ID);
+
+        pickPoses[ID].transform.localPosition = pickInitialPositions[ID];
+        pickPoses[ID].transform.localRotation = pickInitialRotations[ID];
+        // Reactivate tool and make it physically interactable again
+        pickPoses[ID].GetComponent<Rigidbody>().isKinematic = false;
+        pickPoses[ID].SetActive(true);
+
         TrajectoryServiceRequest request = new TrajectoryServiceRequest();
-        request.operation = "handover";
-
-        // TODO: fixed handover with left arm
+        request.operation = "component_handover";
         string arm = "left";
-        var placeObj = placePoses[2];
-
-        request.arm = arm;
-        request.joints_input = CurrentJointConfig(arm);
-        var pickPosition = tools[ID].transform.localPosition + liftOffset + toolsGraspOffsets[ID];
-        var placePosition = placeObj.transform.localPosition;
-
-        placeObj.SetActive(false);        
 
         // Pick Pose
+        var pickPosition = pickPoses[ID].transform.localPosition + liftOffset + objectsGraspOffsets[ID];
+        request.pick_pose = new RosMessageTypes.Geometry.Pose
+        {
+            position = (pickPosition).To<FLU>(),
+            orientation = Quaternion.Euler(180, 90, 0).To<FLU>()
+        };
+
+        // Handover Pose
+        if (pickPosition.x > 0)
+        {
+            arm = "right";
+        }
+        var placePosition = placePoses[6].transform.localPosition;
+        request.place_pose = new RosMessageTypes.Geometry.Pose
+        {
+            position = (placePosition).To<FLU>(),
+            orientation = Quaternion.Euler(180, 90, 0).To<FLU>()
+        };
+
+        request.arm = arm;
+        request.joints_input = InitialJointConfig(arm);
+
+        return request;
+    }
+
+    // Tool handover service request
+    public TrajectoryServiceRequest ToolHandoverService(int ID)
+    {
+        toolIdQueue.Enqueue(ID);
+        TrajectoryServiceRequest request = new TrajectoryServiceRequest();
+        request.operation = "tool_handover";
+        string arm = "left";
+
+        // Pick Pose
+        var pickPosition = tools[ID].transform.localPosition + liftOffset + toolsGraspOffsets[ID];
         request.pick_pose = new RosMessageTypes.Geometry.Pose
         {
             position = (pickPosition).To<FLU>(),
@@ -268,11 +295,68 @@ public class MRTKPlanController : MonoBehaviour
         };
 
         // Handover Pose
+        var placePosition = placePoses[2].transform.localPosition;
+
+        if (pickPosition.x > 0)
+        {
+            arm = "right";
+            placePosition = placePoses[3].transform.localPosition;
+        }
+
         request.place_pose = new RosMessageTypes.Geometry.Pose
         {
             position = (placePosition).To<FLU>(),
             orientation = Quaternion.Euler(-90.0f, 90.0f, 90.0f).To<FLU>()
         };
+
+        request.arm = arm;
+        request.joints_input = InitialJointConfig(arm);
+
+        return request;
+    }
+
+    // Put object back service request
+    public TrajectoryServiceRequest PutBackService(int ID)
+    {
+        toolIdQueue.Enqueue(ID);
+        TrajectoryServiceRequest request = new TrajectoryServiceRequest();
+        request.operation = "put_back";
+
+        var putBackPickPose = placePoses[4];
+        string arm = "left";
+
+        if (toolsInitialPositions[ID].x > 0)
+        {
+            putBackPickPose = placePoses[5];
+            arm = "right";
+        }
+
+        tools[ID].transform.localPosition = putBackPickPose.transform.localPosition;
+        tools[ID].transform.localRotation = toolsInitialRotations[ID];
+        // Reactivate tool and make it physically interactable again
+        tools[ID].GetComponent<Rigidbody>().isKinematic = false;
+        tools[ID].SetActive(true);
+
+        // Pick Pose
+        var pickPosition = putBackPickPose.transform.localPosition + liftOffset + toolsGraspOffsets[ID];
+        request.pick_pose = new RosMessageTypes.Geometry.Pose
+        {
+            position = (pickPosition).To<FLU>(),
+            orientation = Quaternion.Euler(-180, 0, 0).To<FLU>()
+        };
+
+        // Place Pose
+        var placePosition = toolsInitialPositions[ID] + liftOffset + toolsGraspOffsets[ID] + dropOffset;
+        var placeOrientation = Quaternion.Euler(-180, 0, 0).To<FLU>();
+
+        request.place_pose = new RosMessageTypes.Geometry.Pose
+        {
+            position = (placePosition).To<FLU>(),
+            orientation = placeOrientation
+        };
+
+        request.arm = arm;
+        request.joints_input = InitialJointConfig(arm);
 
         return request;
     }
@@ -295,18 +379,18 @@ public class MRTKPlanController : MonoBehaviour
         if (response.trajectories != null)
         {
             var arm = response.arm;
-            var currentJointConfig = CurrentJointConfig(arm);
+            var initialJointConfig = InitialJointConfig(arm);
             float[] lastJointState = {
-                (float)currentJointConfig.joint_00,
-                (float)currentJointConfig.joint_01,
-                (float)currentJointConfig.joint_02,
-                (float)currentJointConfig.joint_03,
-                (float)currentJointConfig.joint_04,
-                (float)currentJointConfig.joint_05,
-                (float)currentJointConfig.joint_06,
+                (float)initialJointConfig.joint_00,
+                (float)initialJointConfig.joint_01,
+                (float)initialJointConfig.joint_02,
+                (float)initialJointConfig.joint_03,
+                (float)initialJointConfig.joint_04,
+                (float)initialJointConfig.joint_05,
+                (float)initialJointConfig.joint_06,
                 };
             // For every trajectory plan returned
-            int steps = 40;
+            int steps = 50;
             var jointArticulationBodies = leftJointArticulationBodies;
             if (arm == "right")
             {
@@ -335,31 +419,55 @@ public class MRTKPlanController : MonoBehaviour
                     // Wait for robot to achieve pose for all joint assignments
                     lastJointState = result;
                 }
-                // Handle different cases based on the executed operation
-                if (response.operation == "pickandplace")
+                // Make sure gripper is open at the beginning
+                if (poseIndex == (int)Poses.PreGrasp)
                 {
-                    if (poseIndex == (int)Poses.PreGrasp || poseIndex == (int)Poses.Place)
-                    {
-                        yield return new WaitForSeconds(poseAssignmentWait);
-                        OpenGripper(arm);
-                    }
-                    else if (poseIndex == (int)Poses.Grasp)
-                        CloseGripper(arm);
-                    else if (poseIndex == (int)Poses.Return)
-                    {
-                        pickPoses[currentPickID].SetActive(false);
-                    }
+                    OpenGripper(arm);
                 }
-                else if (response.operation == "handover")
+                // Close gripper on object grasping
+                if (poseIndex == (int) Poses.Grasp)
+                {
+                    CloseGripper(arm);
+                }
+                // Handle different cases based on the executed operation
+                if (response.operation == "pick_and_place" && poseIndex == (int)Poses.Place)
+                {            
+                    yield return new WaitForSeconds(placeWait);
+                    OpenGripper(arm);
+                    var currentPickID = (int)pickIdQueue.Dequeue();
+                    pickPoses[currentPickID].GetComponent<Rigidbody>().isKinematic = true;
+                    pickPoses[currentPickID].SetActive(false);
+                }
+                else if (response.operation == "tool_handover" && poseIndex == (int)Poses.Move)
+                {
+                    yield return new WaitForSeconds(toolHandoverPoseWait);
+                    OpenGripper(arm);
+                    var currentToolID = (int)toolIdQueue.Dequeue();
+                    tools[currentToolID].GetComponent<Rigidbody>().isKinematic = true;
+                    tools[currentToolID].SetActive(false);
+                }
+                else if (response.operation == "component_handover")
                 {
                     if (poseIndex == (int)Poses.Move)
                     {
-                        yield return new WaitForSeconds(handoverPoseWait);
-                        OpenGripper(arm);
-                        tools[currentToolID].SetActive(false);
+                        yield return new WaitForSeconds(componentHandoverPoseWait);
                     }
-                    else if (poseIndex == (int)Poses.Grasp)
-                        CloseGripper(arm);
+                    else if (poseIndex == (int)Poses.Place)
+                    {
+                        yield return new WaitForSeconds(oneSecondWait);
+                        OpenGripper(arm);
+                        var currentPickID = (int)pickIdQueue.Dequeue();
+                        pickPoses[currentPickID].GetComponent<Rigidbody>().isKinematic = true;
+                        pickPoses[currentPickID].SetActive(false);
+                    }
+                }
+                else if (response.operation == "put_back" && poseIndex == (int)Poses.Place)
+                {
+                    yield return new WaitForSeconds(placeWait);
+                    OpenGripper(arm);
+                    var currentToolID = (int)toolIdQueue.Dequeue();
+                    tools[currentToolID].GetComponent<Rigidbody>().isKinematic = true;
+                    tools[currentToolID].SetActive(false);
                 }
             }
         }
@@ -437,33 +545,63 @@ public class MRTKPlanController : MonoBehaviour
         this.baxter = baxter;
 
         int n = ground.childCount;
-        int nPick = 8;
-        int nPlace = 3;
+        int nPick = 6;
+        int nPlace = 7;
+        int nTools = 3;
+
+        // Store initial poses for future reset of scene
+        pickInitialPositions = new Vector3[nPick];
+        pickInitialRotations = new Quaternion[nPick];
+        toolsInitialPositions = new Vector3[nTools];
+        toolsInitialRotations = new Quaternion[nTools];
 
         // Pick poses
-        this.pickPoses = new GameObject[nPick];
+        pickPoses = new GameObject[nPick];
         int i = 0;
         for(i=0; i < nPick; i++)
         {
-            this.pickPoses[i] = ground.GetChild(i).gameObject;
+            pickPoses[i] = ground.GetChild(i).gameObject;
+            pickInitialPositions[i] = pickPoses[i].transform.localPosition;
+            pickInitialRotations[i] = pickPoses[i].transform.localRotation;
         }
 
-        // Place poses (0 -> left, 1-> right, 2-> handover)
-        this.placePoses = new GameObject[3];
+        /* 
+         * Place poses
+         * 0 -> place left
+         * 1 -> place right
+         * 2 -> tool handover left
+         * 3 -> tool handover right
+         * 4 -> put back pick up left
+         * 5 -> put back pick up right
+         * 6 -> component handover
+         */
+        placePoses = new GameObject[nPlace];
         int k = 0;
         for (int j = i; j < i+nPlace; j++)
         {
-            this.placePoses[k] = ground.GetChild(j).gameObject;
+            placePoses[k] = ground.GetChild(j).gameObject;
             k++;
         }
 
-        this.tools = new GameObject[2];
-        // Screwdriver
-        this.tools[0] = ground.GetChild(n-2).gameObject;
+        tools = new GameObject[nTools];
         // Hammer
-        this.tools[1] = ground.GetChild(n-1).gameObject;
+        tools[0] = ground.GetChild(n-3).gameObject;
+        // Cross Screwdriver
+        tools[1] = ground.GetChild(n-2).gameObject;
+        // Allen key screwdriver
+        tools[2] = ground.GetChild(n-1).gameObject;
+        for (int z = 0; z < nTools; z++)
+        {
+            toolsInitialPositions[z] = tools[z].transform.localPosition;
+            toolsInitialRotations[z] = tools[z].transform.localRotation;
+        }
 
+        // Get reference to gameobjects that compose robot's model
         GetRobotReference();
+
+        //Get reference to sliders and get their values
+        depthOffsetSlider = GameObject.Find("Canvas/DepthOffsetSlider");
+        heightOffsetSlider = GameObject.Find("Canvas/HeightOffsetSlider");
 
         // Get reference to interface buttons and initialize them as inactive
         var buttonsLayer = GameObject.Find("Canvas/Buttons");
@@ -479,30 +617,51 @@ public class MRTKPlanController : MonoBehaviour
         // Get instance of pose marker object
         ImageTarget = GameObject.Find("PoseMarker");
 
+        //Instantiate queues of ids for correct rendering of objects
+        pickIdQueue = new Queue();
+        toolIdQueue = new Queue();
     }
 
     public void SpawnRobotAndInterface()
     {
         var imTargetPosition = ImageTarget.transform.position;
+        var depthOffset = depthOffsetSlider.GetComponent<PinchSlider>().SliderValue;
+        var heightOffset = heightOffsetSlider.GetComponent<PinchSlider>().SliderValue;
+
+        depthOffsetSlider.SetActive(false);
+        heightOffsetSlider.SetActive(false);
         ImageTarget.GetComponent<Behaviour>().enabled = false;
+
         foreach (GameObject button in buttons)
         {
             button.SetActive(true);
         }
 
-        var spawnPosition = imTargetPosition + depthOffset - heightOffset;
+        var spawnPosition = imTargetPosition + Vector3.forward * depthOffset - Vector3.up * heightOffset;
         baxter.transform.SetPositionAndRotation(spawnPosition, Quaternion.Euler(0,-180.0f, 0));
         baxter.SetActive(true);
     }
 
     public void ResetScene()
     {
-        // Reset place objects colliders
-        foreach (GameObject placePose in placePoses)
+        // Revert objects to initial positions and orientations
+        for(int i = 0; i < pickPoses.Length; i++)
         {
-            placePose.SetActive(true);
+            pickPoses[i].transform.localPosition = pickInitialPositions[i];
+            pickPoses[i].transform.localRotation = pickInitialRotations[i];
+            // Reactivate object and make it physically interactable again
+            pickPoses[i].GetComponent<Rigidbody>().isKinematic = false;
+            pickPoses[i].SetActive(true);
+        }
 
+        // Revert tools to initial positions and orientations
+        for (int i = 0; i < tools.Length; i++)
+        {
+            tools[i].transform.localPosition = toolsInitialPositions[i];
+            tools[i].transform.localRotation = toolsInitialRotations[i];
+            // Reactivate tool and make it physically interactable again
+            tools[i].GetComponent<Rigidbody>().isKinematic = false;
+            tools[i].SetActive(true);
         }
     }
-
 }

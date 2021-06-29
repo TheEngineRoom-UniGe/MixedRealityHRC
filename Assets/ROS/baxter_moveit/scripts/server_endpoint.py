@@ -3,10 +3,11 @@
 import rospy
 
 from ros_tcp_endpoint import TcpServer, RosPublisher, RosSubscriber, RosService
-from baxter_moveit.msg import BaxterMoveitJoints, BaxterTrajectory
-from baxter_moveit.srv import MoverService, TrajectoryService
+from baxter_moveit.msg import BaxterMoveitJoints, BaxterTrajectory, BaxterAction
+from baxter_moveit.srv import TrajectoryService, JointConfigService
 from geometry_msgs.msg import Quaternion, Pose
 from sensor_msgs.msg import JointState
+from std_msgs.msg import Bool
 
 
 def main():
@@ -16,9 +17,10 @@ def main():
 
     # Start the Server Endpoint with a ROS communication objects dictionary for routing messages
     tcp_server.start({
-    	'baxter_joint_states': RosSubscriber('baxter_joint_states', JointState, tcp_server),
-        'baxter_moveit': RosService('baxter_moveit', MoverService),
-        'baxter_moveit_trajectory': RosService('baxter_moveit_trajectory', TrajectoryService)
+    	'baxter_joint_states': RosService('baxter_joint_states', JointConfigService),
+        'left_group/baxter_moveit_trajectory': RosService('left_group/baxter_moveit_trajectory', TrajectoryService),
+        'right_group/baxter_moveit_trajectory': RosService('right_group/baxter_moveit_trajectory', TrajectoryService),
+        'baxter_action': RosSubscriber('baxter_action', BaxterAction, tcp_server)
     })
     
     rospy.spin()

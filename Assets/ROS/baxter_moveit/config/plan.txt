@@ -1,0 +1,11 @@
+pickandplace 1 componenthandover 3
+pickandplace 2 componenthandover 3
+toolhandover 0
+putback 0 pickandplace 0
+componenthandover 4
+componenthandover 5 
+toolhandover 2
+componenthandover 5
+putback 2
+toolhandover 1 componenthandover 4
+putback 1

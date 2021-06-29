@@ -1,0 +1,2185 @@
+19:21:46,274 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:21:46,275 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:21:46,275 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:40907', ['TCPROS', 'simone-Aspire-V3-772G', 40907])
+19:21:46,377 rospy.tcpros DEBUG [/rosout]: writing header
+19:21:46,378 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:21:56,615 root DEBUG First action started
+19:22:14,834 root INFO Action 1 took: 18 seconds
+19:22:32,556 root INFO Action 2 took: 18 seconds
+19:22:51,79 rospy.core INFO signal_shutdown [signal-2]
+19:22:51,80 rospy.registration DEBUG registration cleanup starting
+19:22:51,80 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:22:51,80 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:22:51,81 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:22:51,81 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:22:51,84 rospy.registration DEBUG registration cleanup: master calls complete
+19:22:51,85 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:22:51,85 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:22:51,85 rospy.impl.masterslave INFO signal-2
+19:22:51,681 root INFO Action 3 took: 19 seconds
+19:22:51,793 root INFO Action 4 took: 0 seconds
+19:22:52,292 root INFO Action 5 took: 1 seconds
+19:22:52,393 root INFO Action 6 took: 0 seconds
+19:22:52,493 root INFO Action 7 took: 0 seconds
+19:22:52,494 root INFO Action 8 took: 0 seconds
+19:22:52,494 root INFO Action 9 took: 0 seconds
+19:22:52,494 root DEBUG Last action completed
+19:22:52,494 rospy.core INFO signal_shutdown [atexit]
+19:23:32,915 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:23:32,915 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:23:32,915 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:34699', ['TCPROS', 'simone-Aspire-V3-772G', 34699])
+19:23:32,917 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:23:32,917 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:23:33,12 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:23:33,13 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:23:33,13 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:34699', ['TCPROS', 'simone-Aspire-V3-772G', 34699])
+19:23:33,114 rospy.tcpros DEBUG [/rosout]: writing header
+19:23:33,115 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:23:51,57 root DEBUG First action started
+19:24:05,427 rospy.core INFO signal_shutdown [signal-2]
+19:24:05,427 rospy.registration DEBUG registration cleanup starting
+19:24:05,427 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:24:05,427 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:24:05,427 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:24:05,428 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:24:05,431 rospy.registration DEBUG registration cleanup: master calls complete
+19:24:05,432 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:24:05,432 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:24:05,432 rospy.impl.masterslave INFO signal-2
+19:24:05,927 rospy.core INFO signal_shutdown [signal-2]
+19:24:05,958 rospy.core INFO signal_shutdown [signal-2]
+19:24:05,989 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,20 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,49 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,79 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,109 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,140 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,170 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,201 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,231 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,261 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,291 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,321 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,351 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,382 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,412 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,443 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,475 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,503 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,533 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,563 rospy.core INFO signal_shutdown [signal-2]
+19:24:06,759 root INFO Action 1 took: 15 seconds
+19:24:07,117 root INFO Action 2 took: 1 seconds
+19:24:07,618 root INFO Action 3 took: 0 seconds
+19:24:07,718 root INFO Action 4 took: 0 seconds
+19:24:07,819 root INFO Action 5 took: 0 seconds
+19:24:07,819 root INFO Action 6 took: 0 seconds
+19:24:07,819 root INFO Action 7 took: 0 seconds
+19:24:07,819 root DEBUG Last action completed
+19:24:07,819 rospy.core INFO signal_shutdown [atexit]
+19:24:09,993 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:24:09,993 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:24:09,993 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:42341', ['TCPROS', 'simone-Aspire-V3-772G', 42341])
+19:24:09,995 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:24:09,996 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:24:10,92 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:24:10,92 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:24:10,92 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:42341', ['TCPROS', 'simone-Aspire-V3-772G', 42341])
+19:24:10,194 rospy.tcpros DEBUG [/rosout]: writing header
+19:24:10,195 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:24:26,121 root DEBUG First action started
+19:24:59,353 root INFO Action 1 took: 33 seconds
+19:25:17,747 root INFO Action 2 took: 18 seconds
+19:25:18,247 root INFO Action 3 took: 1 seconds
+19:25:18,348 root INFO Action 4 took: 0 seconds
+19:25:18,449 root INFO Action 5 took: 0 seconds
+19:25:18,449 root INFO Action 6 took: 0 seconds
+19:25:18,450 root INFO Action 7 took: 0 seconds
+19:25:18,450 root DEBUG Last action completed
+19:25:18,450 rospy.core INFO signal_shutdown [atexit]
+19:25:18,450 rospy.registration DEBUG registration cleanup starting
+19:25:18,451 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:25:18,451 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:25:18,451 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:25:18,451 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:25:18,454 rospy.registration DEBUG registration cleanup: master calls complete
+19:25:18,454 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:25:18,455 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:25:18,455 rospy.impl.masterslave INFO atexit
+19:25:20,758 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:25:20,759 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:25:20,759 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:34437', ['TCPROS', 'simone-Aspire-V3-772G', 34437])
+19:25:20,761 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:25:20,761 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:25:20,855 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:25:20,856 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:25:20,856 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:34437', ['TCPROS', 'simone-Aspire-V3-772G', 34437])
+19:25:20,957 rospy.tcpros DEBUG [/rosout]: writing header
+19:25:20,958 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:25:34,541 rospy.core INFO signal_shutdown [signal-2]
+19:25:34,541 rospy.registration DEBUG registration cleanup starting
+19:25:34,541 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:25:34,541 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:25:34,541 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:25:34,542 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:25:34,542 rospy.internal DEBUG removing connection to /server_endpoint, connection error detected
+19:25:34,542 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:25:34,545 rospy.registration DEBUG registration cleanup: master calls complete
+19:25:34,545 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:25:34,546 rospy.impl.masterslave INFO signal-2
+19:25:36,153 rospy.core INFO signal_shutdown [signal-2]
+19:25:38,384 root DEBUG First action started
+19:25:38,883 root INFO Action 1 took: 0 seconds
+19:25:38,984 root INFO Action 2 took: 0 seconds
+19:25:38,984 root INFO Action 3 took: 0 seconds
+19:25:39,85 root INFO Action 4 took: 1 seconds
+19:25:39,186 root INFO Action 5 took: 0 seconds
+19:25:39,187 root INFO Action 6 took: 0 seconds
+19:25:39,187 root INFO Action 7 took: 0 seconds
+19:25:39,187 root DEBUG Last action completed
+19:25:39,187 rospy.core INFO signal_shutdown [atexit]
+19:25:42,108 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:25:42,108 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:25:42,109 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:39147', ['TCPROS', 'simone-Aspire-V3-772G', 39147])
+19:25:42,113 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:25:42,113 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:25:56,601 root DEBUG First action started
+19:26:20,331 root INFO Action 1 took: 24 seconds
+19:26:33,433 rospy.core INFO signal_shutdown [signal-2]
+19:26:33,434 rospy.registration DEBUG registration cleanup starting
+19:26:33,434 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:26:33,434 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:26:33,434 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:26:33,435 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:26:33,437 rospy.registration DEBUG registration cleanup: master calls complete
+19:26:33,437 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:26:33,437 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:26:33,438 rospy.impl.masterslave INFO signal-2
+19:26:39,490 root INFO Action 2 took: 19 seconds
+19:26:39,990 root INFO Action 3 took: 0 seconds
+19:26:40,90 root INFO Action 4 took: 1 seconds
+19:26:40,191 root INFO Action 5 took: 0 seconds
+19:26:40,191 root INFO Action 6 took: 0 seconds
+19:26:40,191 root INFO Action 7 took: 0 seconds
+19:26:40,191 root DEBUG Last action completed
+19:26:40,191 rospy.core INFO signal_shutdown [atexit]
+19:26:43,410 rospy.tcpros DEBUG [/rosout]: writing header
+19:26:43,411 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:27:08,405 root DEBUG First action started
+19:27:34,479 root INFO Action 1 took: 26 seconds
+19:27:49,331 rospy.core INFO signal_shutdown [signal-2]
+19:27:49,332 rospy.registration DEBUG registration cleanup starting
+19:27:49,332 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:27:49,333 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:27:49,333 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:27:49,333 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:27:49,336 rospy.registration DEBUG registration cleanup: master calls complete
+19:27:49,337 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:27:49,337 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:27:49,338 rospy.impl.masterslave INFO signal-2
+19:27:49,933 root INFO Action 2 took: 15 seconds
+19:27:50,108 root INFO Action 3 took: 1 seconds
+19:27:50,208 root INFO Action 4 took: 0 seconds
+19:27:50,309 root INFO Action 5 took: 0 seconds
+19:27:50,309 root INFO Action 6 took: 0 seconds
+19:27:50,309 root INFO Action 7 took: 0 seconds
+19:27:50,310 root DEBUG Last action completed
+19:27:50,310 rospy.core INFO signal_shutdown [atexit]
+19:27:53,492 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:27:53,492 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:27:53,492 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:40821', ['TCPROS', 'simone-Aspire-V3-772G', 40821])
+19:27:53,494 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:27:53,495 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:27:53,590 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:27:53,590 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:27:53,590 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:40821', ['TCPROS', 'simone-Aspire-V3-772G', 40821])
+19:27:53,692 rospy.tcpros DEBUG [/rosout]: writing header
+19:27:53,693 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:28:09,114 root DEBUG First action started
+19:28:32,501 root INFO Action 1 took: 23 seconds
+19:28:47,223 rospy.core INFO signal_shutdown [signal-2]
+19:28:47,223 rospy.registration DEBUG registration cleanup starting
+19:28:47,224 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:28:47,224 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:28:47,224 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:28:47,224 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:28:47,225 rospy.internal DEBUG removing connection to /server_endpoint, connection error detected
+19:28:47,225 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:28:47,228 rospy.registration DEBUG registration cleanup: master calls complete
+19:28:47,228 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:28:47,229 rospy.impl.masterslave INFO signal-2
+19:28:49,673 root INFO Action 2 took: 17 seconds
+19:28:50,174 root INFO Action 3 took: 1 seconds
+19:28:50,274 root INFO Action 4 took: 0 seconds
+19:28:50,375 root INFO Action 5 took: 0 seconds
+19:28:50,375 root INFO Action 6 took: 0 seconds
+19:28:50,375 root INFO Action 7 took: 0 seconds
+19:28:50,375 root DEBUG Last action completed
+19:28:50,375 rospy.core INFO signal_shutdown [atexit]
+19:28:54,890 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:28:54,890 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:28:54,890 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:44815', ['TCPROS', 'simone-Aspire-V3-772G', 44815])
+19:28:55,84 rospy.tcpros DEBUG [/rosout]: writing header
+19:28:55,85 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:28:56,107 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:28:56,107 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:28:56,107 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:44815', ['TCPROS', 'simone-Aspire-V3-772G', 44815])
+19:28:56,112 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:28:56,113 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:29:12,493 root DEBUG First action started
+19:30:13,784 rospy.internal DEBUG removing connection to /server_endpoint, connection error detected
+19:30:13,784 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:30:13,886 rospy.core INFO signal_shutdown [signal-2]
+19:30:13,886 rospy.registration DEBUG registration cleanup starting
+19:30:13,886 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:30:13,886 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:30:13,887 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:30:13,887 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:30:13,892 rospy.registration DEBUG registration cleanup: master calls complete
+19:30:13,892 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:30:13,892 rospy.impl.masterslave INFO signal-2
+19:30:15,141 root INFO Action 1 took: 63 seconds
+19:30:15,641 root INFO Action 2 took: 0 seconds
+19:30:15,671 root INFO Action 3 took: 0 seconds
+19:30:15,772 root INFO Action 4 took: 0 seconds
+19:30:15,872 root INFO Action 5 took: 0 seconds
+19:30:15,873 root INFO Action 6 took: 0 seconds
+19:30:15,873 root INFO Action 7 took: 0 seconds
+19:30:15,873 root DEBUG Last action completed
+19:30:15,873 rospy.core INFO signal_shutdown [atexit]
+19:30:21,813 rospy.tcpros DEBUG [/rosout]: writing header
+19:30:21,814 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:30:22,734 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:30:22,734 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:30:22,734 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:44073', ['TCPROS', 'simone-Aspire-V3-772G', 44073])
+19:30:22,745 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:30:22,745 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:30:32,607 root DEBUG First action started
+19:30:56,977 root INFO Action 1 took: 24 seconds
+19:31:11,374 root INFO Action 2 took: 15 seconds
+19:31:11,874 root INFO Action 3 took: 0 seconds
+19:31:11,975 root INFO Action 4 took: 0 seconds
+19:31:12,76 root INFO Action 5 took: 1 seconds
+19:31:12,76 root INFO Action 6 took: 0 seconds
+19:31:12,77 root INFO Action 7 took: 0 seconds
+19:31:12,77 root DEBUG Last action completed
+19:31:12,77 rospy.core INFO signal_shutdown [atexit]
+19:31:12,77 rospy.registration DEBUG registration cleanup starting
+19:31:12,77 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:31:12,78 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:31:12,78 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:31:12,78 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:31:12,83 rospy.registration DEBUG registration cleanup: master calls complete
+19:31:12,83 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:31:12,83 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:31:12,84 rospy.impl.masterslave INFO atexit
+19:31:27,255 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:31:27,256 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:31:27,256 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:46435', ['TCPROS', 'simone-Aspire-V3-772G', 46435])
+19:31:27,358 rospy.tcpros DEBUG [/rosout]: writing header
+19:31:27,359 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:31:37,357 root DEBUG First action started
+19:31:52,292 root INFO Action 1 took: 15 seconds
+19:31:52,293 root DEBUG Last action completed
+19:31:52,293 rospy.core INFO signal_shutdown [atexit]
+19:31:52,293 rospy.registration DEBUG registration cleanup starting
+19:31:52,293 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:31:52,293 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:31:52,294 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:31:52,294 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:31:52,296 rospy.registration DEBUG registration cleanup: master calls complete
+19:31:52,297 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:31:52,298 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:31:52,298 rospy.impl.masterslave INFO atexit
+19:32:01,502 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:32:01,503 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:32:01,503 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:46137', ['TCPROS', 'simone-Aspire-V3-772G', 46137])
+19:32:01,605 rospy.tcpros DEBUG [/rosout]: writing header
+19:32:01,606 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:32:02,170 root DEBUG First action started
+19:32:14,613 root INFO Action 1 took: 12 seconds
+19:32:14,613 root DEBUG Last action completed
+19:32:14,614 rospy.core INFO signal_shutdown [atexit]
+19:32:14,614 rospy.registration DEBUG registration cleanup starting
+19:32:14,614 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:32:14,614 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:32:14,615 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:32:14,615 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:32:14,617 rospy.registration DEBUG registration cleanup: master calls complete
+19:32:14,617 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:32:14,618 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:32:14,618 rospy.impl.masterslave INFO atexit
+19:32:17,598 root DEBUG First action started
+19:32:17,683 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:32:17,683 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:32:17,683 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:45497', ['TCPROS', 'simone-Aspire-V3-772G', 45497])
+19:32:17,785 rospy.tcpros DEBUG [/rosout]: writing header
+19:32:17,786 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:32:27,48 root INFO Action 1 took: 10 seconds
+19:32:27,48 root DEBUG Last action completed
+19:32:27,48 rospy.core INFO signal_shutdown [atexit]
+19:32:27,48 rospy.registration DEBUG registration cleanup starting
+19:32:27,49 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:32:27,49 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:32:27,49 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:32:27,49 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:32:27,52 rospy.registration DEBUG registration cleanup: master calls complete
+19:32:27,53 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:32:27,53 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:32:27,53 rospy.impl.masterslave INFO atexit
+19:32:51,812 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:32:51,812 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:32:51,812 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:36131', ['TCPROS', 'simone-Aspire-V3-772G', 36131])
+19:32:51,914 rospy.tcpros DEBUG [/rosout]: writing header
+19:32:51,915 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:32:52,306 root DEBUG First action started
+19:33:06,645 root INFO Action 1 took: 14 seconds
+19:33:06,645 root DEBUG Last action completed
+19:33:06,646 rospy.core INFO signal_shutdown [atexit]
+19:33:06,646 rospy.registration DEBUG registration cleanup starting
+19:33:06,646 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:33:06,647 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:33:06,647 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:33:06,647 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:33:06,650 rospy.registration DEBUG registration cleanup: master calls complete
+19:33:06,650 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:33:06,650 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:33:06,650 rospy.impl.masterslave INFO atexit
+19:33:09,450 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:33:09,451 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:33:09,451 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:33195', ['TCPROS', 'simone-Aspire-V3-772G', 33195])
+19:33:09,553 rospy.tcpros DEBUG [/rosout]: writing header
+19:33:09,554 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:33:35,845 root DEBUG First action started
+19:33:59,456 root INFO Action 1 took: 24 seconds
+19:33:59,478 root DEBUG Last action completed
+19:33:59,478 rospy.core INFO signal_shutdown [atexit]
+19:33:59,478 rospy.registration DEBUG registration cleanup starting
+19:33:59,478 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:33:59,479 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:33:59,479 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:33:59,479 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:33:59,480 rospy.registration DEBUG registration cleanup: master calls complete
+19:33:59,480 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:33:59,481 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:33:59,481 rospy.impl.masterslave INFO atexit
+19:34:01,743 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:34:01,743 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:34:01,744 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:45231', ['TCPROS', 'simone-Aspire-V3-772G', 45231])
+19:34:01,846 rospy.tcpros DEBUG [/rosout]: writing header
+19:34:01,847 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:35:02,75 root DEBUG First action started
+19:35:28,882 root INFO Action 1 took: 26 seconds
+19:35:28,883 root DEBUG Last action completed
+19:35:28,883 rospy.core INFO signal_shutdown [atexit]
+19:35:28,883 rospy.registration DEBUG registration cleanup starting
+19:35:28,883 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:35:28,884 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:35:28,884 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:35:28,884 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:35:28,887 rospy.registration DEBUG registration cleanup: master calls complete
+19:35:28,887 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:35:28,888 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:35:28,888 rospy.impl.masterslave INFO atexit
+19:35:31,44 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:35:31,44 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:35:31,44 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:33595', ['TCPROS', 'simone-Aspire-V3-772G', 33595])
+19:35:31,46 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:35:31,47 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:35:31,140 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:35:31,140 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:35:31,140 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:33595', ['TCPROS', 'simone-Aspire-V3-772G', 33595])
+19:35:31,242 rospy.tcpros DEBUG [/rosout]: writing header
+19:35:31,243 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:35:40,408 root DEBUG First action started
+19:36:08,305 root INFO Action 1 took: 28 seconds
+19:36:08,306 root DEBUG Last action completed
+19:36:08,306 rospy.core INFO signal_shutdown [atexit]
+19:36:08,306 rospy.registration DEBUG registration cleanup starting
+19:36:08,306 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:36:08,307 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:36:08,307 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:36:08,307 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:36:08,310 rospy.registration DEBUG registration cleanup: master calls complete
+19:36:08,310 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:36:08,310 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:36:08,310 rospy.impl.masterslave INFO atexit
+19:36:14,234 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:36:14,234 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:36:14,235 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:45291', ['TCPROS', 'simone-Aspire-V3-772G', 45291])
+19:36:14,237 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:36:14,237 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:36:14,332 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:36:14,332 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:36:14,332 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:45291', ['TCPROS', 'simone-Aspire-V3-772G', 45291])
+19:36:14,433 rospy.tcpros DEBUG [/rosout]: writing header
+19:36:14,434 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:36:18,495 root DEBUG First action started
+19:36:54,571 root INFO Action 1 took: 36 seconds
+19:36:54,571 root DEBUG Last action completed
+19:36:54,572 rospy.core INFO signal_shutdown [atexit]
+19:36:54,572 rospy.registration DEBUG registration cleanup starting
+19:36:54,572 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:36:54,573 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:36:54,573 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:36:54,573 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:36:54,576 rospy.registration DEBUG registration cleanup: master calls complete
+19:36:54,576 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:36:54,577 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:36:54,577 rospy.impl.masterslave INFO atexit
+19:36:56,827 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:36:56,827 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:36:56,828 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:35215', ['TCPROS', 'simone-Aspire-V3-772G', 35215])
+19:36:56,929 rospy.tcpros DEBUG [/rosout]: writing header
+19:36:56,930 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:37:00,363 root DEBUG First action started
+19:37:34,57 root INFO Action 1 took: 34 seconds
+19:37:34,57 root DEBUG Last action completed
+19:37:34,58 rospy.core INFO signal_shutdown [atexit]
+19:37:34,58 rospy.registration DEBUG registration cleanup starting
+19:37:34,58 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:37:34,58 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:37:34,58 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:37:34,59 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:37:34,61 rospy.registration DEBUG registration cleanup: master calls complete
+19:37:34,62 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:37:34,62 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:37:34,62 rospy.impl.masterslave INFO atexit
+19:37:36,216 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:37:36,217 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:37:36,217 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:36053', ['TCPROS', 'simone-Aspire-V3-772G', 36053])
+19:37:36,219 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:37:36,220 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:37:36,314 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:37:36,314 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:37:36,314 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:36053', ['TCPROS', 'simone-Aspire-V3-772G', 36053])
+19:37:36,416 rospy.tcpros DEBUG [/rosout]: writing header
+19:37:36,416 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:37:36,721 root DEBUG First action started
+19:37:56,878 root INFO Action 1 took: 20 seconds
+19:37:56,878 root DEBUG Last action completed
+19:37:56,879 rospy.core INFO signal_shutdown [atexit]
+19:37:56,879 rospy.registration DEBUG registration cleanup starting
+19:37:56,879 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:37:56,879 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:37:56,880 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:37:56,880 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:37:56,883 rospy.registration DEBUG registration cleanup: master calls complete
+19:37:56,883 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:37:56,883 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:37:56,883 rospy.impl.masterslave INFO atexit
+19:37:59,70 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:37:59,70 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:37:59,70 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:36715', ['TCPROS', 'simone-Aspire-V3-772G', 36715])
+19:37:59,73 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:37:59,73 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:37:59,168 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:37:59,168 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:37:59,169 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:36715', ['TCPROS', 'simone-Aspire-V3-772G', 36715])
+19:37:59,270 rospy.tcpros DEBUG [/rosout]: writing header
+19:37:59,271 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:38:08,499 root DEBUG First action started
+19:38:32,871 root INFO Action 1 took: 24 seconds
+19:38:32,872 root DEBUG Last action completed
+19:38:32,872 rospy.core INFO signal_shutdown [atexit]
+19:38:32,872 rospy.registration DEBUG registration cleanup starting
+19:38:32,873 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:38:32,873 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:38:32,873 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:38:32,873 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:38:32,876 rospy.registration DEBUG registration cleanup: master calls complete
+19:38:32,876 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:38:32,877 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:38:32,877 rospy.impl.masterslave INFO atexit
+19:38:35,46 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:38:35,46 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:38:35,47 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:38225', ['TCPROS', 'simone-Aspire-V3-772G', 38225])
+19:38:35,148 rospy.tcpros DEBUG [/rosout]: writing header
+19:38:35,149 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:39:17,286 root DEBUG First action started
+19:39:38,649 root INFO Action 1 took: 21 seconds
+19:39:38,649 root DEBUG Last action completed
+19:39:38,650 rospy.core INFO signal_shutdown [atexit]
+19:39:38,650 rospy.registration DEBUG registration cleanup starting
+19:39:38,650 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:39:38,650 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:39:38,650 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:39:38,651 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:39:38,653 rospy.registration DEBUG registration cleanup: master calls complete
+19:39:38,654 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:39:38,654 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:39:38,654 rospy.impl.masterslave INFO atexit
+19:39:40,791 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:39:40,792 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:39:40,792 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:44879', ['TCPROS', 'simone-Aspire-V3-772G', 44879])
+19:39:40,794 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:39:40,794 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:39:40,886 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:39:40,887 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:39:40,887 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:44879', ['TCPROS', 'simone-Aspire-V3-772G', 44879])
+19:39:40,988 rospy.tcpros DEBUG [/rosout]: writing header
+19:39:40,989 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:39:50,436 root DEBUG First action started
+19:41:09,250 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:41:09,252 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 1
+19:41:09,252 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:41:09,452 rospy.core INFO signal_shutdown [signal-2]
+19:41:09,452 rospy.registration DEBUG registration cleanup starting
+19:41:09,452 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:41:09,452 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:41:09,452 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:41:09,452 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:41:09,453 rospy.internal DEBUG removing connection to /server_endpoint, connection error detected
+19:41:09,453 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:41:09,455 rospy.registration DEBUG registration cleanup: master calls complete
+19:41:09,455 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:41:09,456 rospy.impl.masterslave INFO signal-2
+19:41:13,401 root INFO Action 1 took: 83 seconds
+19:41:13,401 root DEBUG Last action completed
+19:41:13,403 rospy.core INFO signal_shutdown [atexit]
+19:41:16,527 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:41:16,527 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:41:16,527 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:34829', ['TCPROS', 'simone-Aspire-V3-772G', 34829])
+19:41:16,639 rospy.tcpros DEBUG [/rosout]: writing header
+19:41:16,640 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:41:19,947 root DEBUG First action started
+19:41:21,735 root INFO Action 1 took: 2 seconds
+19:41:21,735 root DEBUG Last action completed
+19:41:21,735 rospy.core INFO signal_shutdown [atexit]
+19:41:21,735 rospy.registration DEBUG registration cleanup starting
+19:41:21,735 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:41:21,735 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:41:21,736 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:41:21,736 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:41:21,738 rospy.registration DEBUG registration cleanup: master calls complete
+19:41:21,738 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:41:21,738 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:41:21,738 rospy.impl.masterslave INFO atexit
+19:41:42,804 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:41:42,805 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:41:42,805 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:34253', ['TCPROS', 'simone-Aspire-V3-772G', 34253])
+19:41:42,807 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:41:42,807 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:41:42,901 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:41:42,901 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:41:42,901 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:34253', ['TCPROS', 'simone-Aspire-V3-772G', 34253])
+19:41:43,3 rospy.tcpros DEBUG [/rosout]: writing header
+19:41:43,4 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:41:44,11 root DEBUG First action started
+19:42:09,408 root INFO Action 1 took: 25 seconds
+19:42:09,408 root DEBUG Last action completed
+19:42:09,409 rospy.core INFO signal_shutdown [atexit]
+19:42:09,409 rospy.registration DEBUG registration cleanup starting
+19:42:09,409 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:42:09,410 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:42:09,410 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:42:09,410 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:42:09,414 rospy.registration DEBUG registration cleanup: master calls complete
+19:42:09,414 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:42:09,415 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:42:09,415 rospy.impl.masterslave INFO atexit
+19:42:12,274 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:42:12,275 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:42:12,275 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:38035', ['TCPROS', 'simone-Aspire-V3-772G', 38035])
+19:42:12,377 rospy.tcpros DEBUG [/rosout]: writing header
+19:42:12,378 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:42:13,62 root DEBUG First action started
+19:42:26,757 root INFO Action 1 took: 13 seconds
+19:42:26,757 root DEBUG Last action completed
+19:42:26,757 rospy.core INFO signal_shutdown [atexit]
+19:42:26,758 rospy.registration DEBUG registration cleanup starting
+19:42:26,758 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:42:26,758 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:42:26,758 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:42:26,759 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:42:26,762 rospy.registration DEBUG registration cleanup: master calls complete
+19:42:26,762 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:42:26,762 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:42:26,763 rospy.impl.masterslave INFO atexit
+19:42:28,922 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+19:42:28,922 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+19:42:28,922 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:39973', ['TCPROS', 'simone-Aspire-V3-772G', 39973])
+19:42:28,924 rospy.tcpros DEBUG [/baxter_action]: writing header
+19:42:28,924 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+19:42:29,20 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:42:29,20 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:42:29,21 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:39973', ['TCPROS', 'simone-Aspire-V3-772G', 39973])
+19:42:29,122 rospy.tcpros DEBUG [/rosout]: writing header
+19:42:29,123 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:42:35,768 root DEBUG First action started
+19:43:00,597 root INFO Action 1 took: 25 seconds
+19:43:00,597 root DEBUG Last action completed
+19:43:00,598 rospy.core INFO signal_shutdown [atexit]
+19:43:00,598 rospy.registration DEBUG registration cleanup starting
+19:43:00,598 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:43:00,599 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:43:00,599 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:43:00,599 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:43:00,603 rospy.registration DEBUG registration cleanup: master calls complete
+19:43:00,604 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:43:00,604 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:43:00,605 rospy.impl.masterslave INFO atexit
+19:43:07,903 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+19:43:07,903 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+19:43:07,904 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:43945', ['TCPROS', 'simone-Aspire-V3-772G', 43945])
+19:43:08,5 rospy.tcpros DEBUG [/rosout]: writing header
+19:43:08,6 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+19:43:09,669 root DEBUG First action started
+19:43:32,757 root INFO Action 1 took: 23 seconds
+19:43:51,312 root INFO Action 2 took: 19 seconds
+19:43:51,313 root DEBUG Last action completed
+19:43:51,313 rospy.core INFO signal_shutdown [atexit]
+19:43:51,313 rospy.registration DEBUG registration cleanup starting
+19:43:51,314 rospy.registration DEBUG unregisterPublisher [/rosout]
+19:43:51,314 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+19:43:51,314 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+19:43:51,314 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+19:43:51,317 rospy.registration DEBUG registration cleanup: master calls complete
+19:43:51,317 rospy.internal INFO topic[/rosout] removing connection to /rosout
+19:43:51,317 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+19:43:51,317 rospy.impl.masterslave INFO atexit
+10:17:18,507 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+10:17:18,508 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+10:17:18,521 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+10:17:18,521 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:33013', ['TCPROS', '130.251.13.172', 33013])
+10:17:18,521 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+10:17:18,522 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:33013', ['TCPROS', '130.251.13.172', 33013])
+10:17:18,525 rospy.tcpros DEBUG [/baxter_action]: writing header
+10:17:18,525 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+10:17:18,624 rospy.tcpros DEBUG [/rosout]: writing header
+10:17:18,624 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+10:17:42,309 root DEBUG First action started
+10:18:23,779 root INFO Action 1 took: 41 seconds
+10:19:08,15 root INFO Action 2 took: 45 seconds
+10:19:42,153 root INFO Action 3 took: 34 seconds
+10:20:14,827 root INFO Action 4 took: 32 seconds
+10:20:56,412 root INFO Action 5 took: 42 seconds
+10:21:37,533 root INFO Action 6 took: 41 seconds
+10:22:10,766 root INFO Action 7 took: 33 seconds
+10:22:39,458 root INFO Action 8 took: 29 seconds
+10:23:21,228 root INFO Action 9 took: 42 seconds
+10:23:49,915 root INFO Action 10 took: 28 seconds
+10:23:49,915 root DEBUG Last action completed
+10:23:49,915 rospy.core INFO signal_shutdown [atexit]
+10:23:49,916 rospy.registration DEBUG registration cleanup starting
+10:23:49,916 rospy.registration DEBUG unregisterPublisher [/rosout]
+10:23:49,917 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+10:23:49,917 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+10:23:49,917 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+10:23:49,920 rospy.registration DEBUG registration cleanup: master calls complete
+10:23:49,920 rospy.internal INFO topic[/rosout] removing connection to /rosout
+10:23:49,921 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+10:23:49,921 rospy.impl.masterslave INFO atexit
+10:25:15,325 rospy.tcpros DEBUG [/rosout]: writing header
+10:25:15,326 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+10:25:28,966 root DEBUG First action started
+10:26:10,730 root INFO Action 1 took: 42 seconds
+10:27:30,817 root INFO Action 2 took: 80 seconds
+10:28:04,442 root INFO Action 3 took: 34 seconds
+10:28:37,221 root INFO Action 4 took: 33 seconds
+10:29:19,841 root INFO Action 5 took: 42 seconds
+10:30:00,304 root INFO Action 6 took: 41 seconds
+10:30:30,799 root INFO Action 7 took: 30 seconds
+10:31:16,212 root INFO Action 8 took: 46 seconds
+10:31:16,342 root INFO Action 9 took: 0 seconds
+10:31:16,863 root INFO Action 10 took: 0 seconds
+10:31:16,864 root DEBUG Last action completed
+10:31:16,864 rospy.core INFO signal_shutdown [atexit]
+10:31:16,864 rospy.registration DEBUG registration cleanup starting
+10:31:16,864 rospy.registration DEBUG unregisterPublisher [/rosout]
+10:31:16,864 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+10:31:16,865 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+10:31:16,865 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+10:31:16,870 rospy.registration DEBUG registration cleanup: master calls complete
+10:31:16,870 rospy.internal INFO topic[/rosout] removing connection to /rosout
+10:31:16,870 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+10:31:16,870 rospy.impl.masterslave INFO atexit
+10:32:35,163 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+10:32:35,164 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+10:32:35,164 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:38717', ['TCPROS', '130.251.13.172', 38717])
+10:32:35,169 rospy.tcpros DEBUG [/baxter_action]: writing header
+10:32:35,169 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+10:32:35,261 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+10:32:35,262 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+10:32:35,262 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:38717', ['TCPROS', '130.251.13.172', 38717])
+10:32:35,364 rospy.tcpros DEBUG [/rosout]: writing header
+10:32:35,365 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+10:33:08,579 root DEBUG First action started
+10:34:09,175 root INFO Action 1 took: 61 seconds
+10:34:50,918 root INFO Action 2 took: 41 seconds
+10:35:22,526 root INFO Action 3 took: 32 seconds
+10:35:58,971 root INFO Action 4 took: 36 seconds
+10:36:32,826 root INFO Action 5 took: 34 seconds
+10:37:17,707 root INFO Action 6 took: 45 seconds
+10:38:34,387 root INFO Action 7 took: 77 seconds
+10:39:19,826 root INFO Action 8 took: 45 seconds
+10:39:19,973 root INFO Action 9 took: 0 seconds
+10:39:20,104 root INFO Action 10 took: 1 seconds
+10:39:20,104 root DEBUG Last action completed
+10:39:20,105 rospy.core INFO signal_shutdown [atexit]
+10:39:20,105 rospy.registration DEBUG registration cleanup starting
+10:39:20,105 rospy.registration DEBUG unregisterPublisher [/rosout]
+10:39:20,105 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+10:39:20,106 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+10:39:20,106 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+10:39:20,110 rospy.registration DEBUG registration cleanup: master calls complete
+10:39:20,110 rospy.internal INFO topic[/rosout] removing connection to /rosout
+10:39:20,110 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+10:39:20,110 rospy.impl.masterslave INFO atexit
+10:57:14,99 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+10:57:14,99 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+10:57:14,99 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:38147', ['TCPROS', '130.251.13.172', 38147])
+10:57:14,103 rospy.tcpros DEBUG [/baxter_action]: writing header
+10:57:14,103 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+10:57:14,198 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+10:57:14,198 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+10:57:14,198 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:38147', ['TCPROS', '130.251.13.172', 38147])
+10:57:14,300 rospy.tcpros DEBUG [/rosout]: writing header
+10:57:14,301 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+10:57:33,193 root DEBUG First action started
+10:58:15,937 root INFO Action 1 took: 42 seconds
+10:58:58,98 root INFO Action 2 took: 43 seconds
+10:59:33,712 root INFO Action 3 took: 35 seconds
+11:00:00,141 root INFO Action 4 took: 27 seconds
+11:00:00,641 root INFO Action 5 took: 0 seconds
+11:00:00,670 root INFO Action 6 took: 0 seconds
+11:00:00,702 root INFO Action 7 took: 0 seconds
+11:00:00,732 root INFO Action 8 took: 0 seconds
+11:00:00,763 root INFO Action 9 took: 0 seconds
+11:00:00,864 root INFO Action 10 took: 0 seconds
+11:00:00,864 root INFO Action 11 took: 0 seconds
+11:00:00,864 root DEBUG Last action completed
+11:00:00,865 rospy.core INFO signal_shutdown [atexit]
+11:00:00,865 rospy.registration DEBUG registration cleanup starting
+11:00:00,865 rospy.registration DEBUG unregisterPublisher [/rosout]
+11:00:00,865 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+11:00:00,865 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+11:00:00,865 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+11:00:00,870 rospy.registration DEBUG registration cleanup: master calls complete
+11:00:00,870 rospy.internal INFO topic[/rosout] removing connection to /rosout
+11:00:00,870 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+11:00:00,871 rospy.impl.masterslave INFO atexit
+11:02:21,668 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+11:02:21,668 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+11:02:21,668 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:42209', ['TCPROS', '130.251.13.172', 42209])
+11:02:21,672 rospy.tcpros DEBUG [/baxter_action]: writing header
+11:02:21,672 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+11:02:21,766 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+11:02:21,766 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+11:02:21,767 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:42209', ['TCPROS', '130.251.13.172', 42209])
+11:02:21,869 rospy.tcpros DEBUG [/rosout]: writing header
+11:02:21,870 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+11:02:29,607 root DEBUG First action started
+11:03:10,221 root INFO Action 1 took: 41 seconds
+11:04:02,482 root INFO Action 2 took: 52 seconds
+11:04:37,642 root INFO Action 3 took: 35 seconds
+11:05:09,793 root INFO Action 4 took: 32 seconds
+11:05:52,280 root INFO Action 5 took: 43 seconds
+11:06:45,156 root INFO Action 6 took: 53 seconds
+11:06:45,656 root INFO Action 7 took: 0 seconds
+11:06:45,686 root INFO Action 8 took: 0 seconds
+11:06:45,716 root INFO Action 9 took: 0 seconds
+11:06:45,817 root INFO Action 10 took: 0 seconds
+11:06:45,818 root INFO Action 11 took: 0 seconds
+11:06:45,818 root DEBUG Last action completed
+11:06:45,818 rospy.core INFO signal_shutdown [atexit]
+11:06:45,818 rospy.registration DEBUG registration cleanup starting
+11:06:45,819 rospy.registration DEBUG unregisterPublisher [/rosout]
+11:06:45,819 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+11:06:45,819 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+11:06:45,819 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+11:06:45,823 rospy.registration DEBUG registration cleanup: master calls complete
+11:06:45,823 rospy.internal INFO topic[/rosout] removing connection to /rosout
+11:06:45,823 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+11:06:45,824 rospy.impl.masterslave INFO atexit
+11:08:42,908 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+11:08:42,908 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+11:08:42,909 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+11:08:42,909 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+11:08:42,910 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:34519', ['TCPROS', '130.251.13.172', 34519])
+11:08:42,910 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:34519', ['TCPROS', '130.251.13.172', 34519])
+11:08:42,914 rospy.tcpros DEBUG [/baxter_action]: writing header
+11:08:42,915 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+11:08:43,11 rospy.tcpros DEBUG [/rosout]: writing header
+11:08:43,12 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+11:08:58,406 root DEBUG First action started
+11:09:42,934 root INFO Action 1 took: 44 seconds
+11:10:28,735 root INFO Action 2 took: 46 seconds
+11:11:01,955 root INFO Action 3 took: 33 seconds
+11:11:32,400 root INFO Action 4 took: 31 seconds
+11:12:14,327 root INFO Action 5 took: 42 seconds
+11:13:03,271 root INFO Action 6 took: 49 seconds
+11:13:54,472 root INFO Action 7 took: 51 seconds
+11:14:36,550 root INFO Action 8 took: 42 seconds
+11:15:05,775 root INFO Action 9 took: 29 seconds
+11:15:48,14 root INFO Action 10 took: 43 seconds
+11:16:18,260 root INFO Action 11 took: 30 seconds
+11:16:18,261 root DEBUG Last action completed
+11:16:18,261 rospy.core INFO signal_shutdown [atexit]
+11:16:18,261 rospy.registration DEBUG registration cleanup starting
+11:16:18,261 rospy.registration DEBUG unregisterPublisher [/rosout]
+11:16:18,262 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+11:16:18,262 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+11:16:18,262 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+11:16:18,265 rospy.registration DEBUG registration cleanup: master calls complete
+11:16:18,266 rospy.internal INFO topic[/rosout] removing connection to /rosout
+11:16:18,266 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+11:16:18,266 rospy.impl.masterslave INFO atexit
+11:23:31,38 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+11:23:31,38 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+11:23:31,38 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:33995', ['TCPROS', '130.251.13.172', 33995])
+11:23:31,139 rospy.tcpros DEBUG [/rosout]: writing header
+11:23:31,141 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+11:23:32,270 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+11:23:32,270 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+11:23:32,270 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:33995', ['TCPROS', '130.251.13.172', 33995])
+11:23:32,274 rospy.tcpros DEBUG [/baxter_action]: writing header
+11:23:32,275 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+11:23:39,376 root DEBUG First action started
+11:24:02,174 root INFO Action 1 took: 23 seconds
+11:24:20,668 root INFO Action 2 took: 18 seconds
+11:24:37,197 root INFO Action 3 took: 17 seconds
+11:25:00,559 root INFO Action 4 took: 23 seconds
+11:25:16,322 root INFO Action 5 took: 16 seconds
+11:25:16,323 root DEBUG Last action completed
+11:25:16,323 rospy.core INFO signal_shutdown [atexit]
+11:25:16,323 rospy.registration DEBUG registration cleanup starting
+11:25:16,323 rospy.registration DEBUG unregisterPublisher [/rosout]
+11:25:16,324 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+11:25:16,324 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+11:25:16,324 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+11:25:16,328 rospy.registration DEBUG registration cleanup: master calls complete
+11:25:16,328 rospy.internal INFO topic[/rosout] removing connection to /rosout
+11:25:16,328 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+11:25:16,328 rospy.impl.masterslave INFO atexit
+11:25:27,653 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+11:25:27,653 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+11:25:27,653 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:41153', ['TCPROS', '130.251.13.172', 41153])
+11:25:27,655 rospy.tcpros DEBUG [/baxter_action]: writing header
+11:25:27,656 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+11:25:27,753 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+11:25:27,754 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+11:25:27,754 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:41153', ['TCPROS', '130.251.13.172', 41153])
+11:25:27,855 rospy.tcpros DEBUG [/rosout]: writing header
+11:25:27,856 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+11:25:35,975 root DEBUG First action started
+11:25:54,952 root INFO Action 1 took: 19 seconds
+11:26:13,23 root INFO Action 2 took: 19 seconds
+11:26:36,377 root INFO Action 3 took: 23 seconds
+11:26:57,656 root INFO Action 4 took: 21 seconds
+11:27:17,767 root INFO Action 5 took: 20 seconds
+11:27:36,923 root INFO Action 6 took: 19 seconds
+11:27:58,703 root INFO Action 7 took: 22 seconds
+11:28:17,860 root INFO Action 8 took: 19 seconds
+11:28:33,289 root INFO Action 9 took: 16 seconds
+11:28:55,351 root INFO Action 10 took: 22 seconds
+11:29:11,292 root INFO Action 11 took: 16 seconds
+11:29:11,293 root DEBUG Last action completed
+11:29:11,293 rospy.core INFO signal_shutdown [atexit]
+11:29:11,293 rospy.registration DEBUG registration cleanup starting
+11:29:11,294 rospy.registration DEBUG unregisterPublisher [/rosout]
+11:29:11,294 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+11:29:11,294 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+11:29:11,294 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+11:29:11,299 rospy.registration DEBUG registration cleanup: master calls complete
+11:29:11,299 rospy.internal INFO topic[/rosout] removing connection to /rosout
+11:29:11,299 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+11:29:11,300 rospy.impl.masterslave INFO atexit
+12:21:23,84 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+12:21:23,84 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+12:21:23,85 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:44595', ['TCPROS', 'simone-Aspire-V3-772G', 44595])
+12:21:23,187 rospy.tcpros DEBUG [/rosout]: writing header
+12:21:23,188 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+12:21:24,829 root DEBUG First action started
+12:21:25,571 root INFO Action 1 took: 1 seconds
+12:21:26,159 rospy.core INFO signal_shutdown [signal-2]
+12:21:26,159 rospy.registration DEBUG registration cleanup starting
+12:21:26,160 rospy.registration DEBUG unregisterPublisher [/rosout]
+12:21:26,160 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+12:21:26,160 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+12:21:26,160 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+12:21:26,164 rospy.registration DEBUG registration cleanup: master calls complete
+12:21:26,164 rospy.internal INFO topic[/rosout] removing connection to /rosout
+12:21:26,165 rospy.impl.masterslave INFO signal-2
+12:21:26,886 rospy.core INFO signal_shutdown [signal-2]
+12:21:27,61 rospy.core INFO signal_shutdown [signal-2]
+12:21:27,191 rospy.core INFO signal_shutdown [signal-2]
+12:21:27,331 rospy.core INFO signal_shutdown [signal-2]
+12:21:27,475 rospy.core INFO signal_shutdown [signal-2]
+12:21:27,610 rospy.core INFO signal_shutdown [signal-2]
+12:23:02,254 root INFO Action 2 took: 97 seconds
+12:23:02,754 root INFO Action 3 took: 0 seconds
+12:23:02,854 root INFO Action 4 took: 0 seconds
+12:23:02,855 root INFO Action 5 took: 0 seconds
+12:23:02,855 root INFO Action 6 took: 0 seconds
+12:23:02,876 root INFO Action 7 took: 0 seconds
+12:23:02,906 root INFO Action 8 took: 0 seconds
+12:23:02,937 root INFO Action 9 took: 0 seconds
+12:23:03,37 root INFO Action 10 took: 1 seconds
+12:23:03,38 root INFO Action 11 took: 0 seconds
+12:23:03,38 root DEBUG Last action completed
+12:23:03,38 rospy.core INFO signal_shutdown [atexit]
+14:00:51,617 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:00:51,618 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:00:51,618 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:36727', ['TCPROS', 'simone-Aspire-V3-772G', 36727])
+14:00:51,720 rospy.tcpros DEBUG [/rosout]: writing header
+14:00:51,722 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:00:53,483 root DEBUG First action started
+14:00:53,656 root INFO Action 1 took: 0 seconds
+14:00:53,826 root INFO Action 2 took: 0 seconds
+14:00:53,981 root INFO Action 3 took: 0 seconds
+14:00:54,142 root INFO Action 4 took: 1 seconds
+14:00:54,307 root INFO Action 5 took: 0 seconds
+14:00:54,474 root INFO Action 6 took: 0 seconds
+14:00:54,637 root INFO Action 7 took: 0 seconds
+14:00:54,782 root INFO Action 8 took: 0 seconds
+14:00:54,923 root INFO Action 9 took: 0 seconds
+14:00:55,96 root INFO Action 10 took: 1 seconds
+14:00:55,690 root INFO Action 11 took: 0 seconds
+14:00:55,690 root DEBUG Last action completed
+14:00:55,691 rospy.core INFO signal_shutdown [atexit]
+14:00:55,691 rospy.registration DEBUG registration cleanup starting
+14:00:55,691 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:00:55,691 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:00:55,691 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:00:55,691 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:00:55,693 rospy.registration DEBUG registration cleanup: master calls complete
+14:00:55,693 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:00:55,693 rospy.impl.masterslave INFO atexit
+14:05:16,676 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:05:16,676 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:05:16,677 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:37921', ['TCPROS', 'simone-Aspire-V3-772G', 37921])
+14:05:16,779 rospy.tcpros DEBUG [/rosout]: writing header
+14:05:16,779 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:05:17,193 root DEBUG First action started
+14:05:17,317 rospy.core INFO signal_shutdown [atexit]
+14:05:17,317 rospy.registration DEBUG registration cleanup starting
+14:05:17,317 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:05:17,317 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:05:17,317 rospy.registration DEBUG unregisterPublisher [/XXX]
+14:05:17,317 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:05:17,317 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:05:17,319 rospy.registration DEBUG registration cleanup: master calls complete
+14:05:17,319 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:05:17,319 rospy.impl.masterslave INFO atexit
+14:06:05,669 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:06:05,670 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:06:05,670 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:39449', ['TCPROS', 'simone-Aspire-V3-772G', 39449])
+14:06:05,772 rospy.tcpros DEBUG [/rosout]: writing header
+14:06:05,772 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:06:06,93 root DEBUG First action started
+14:06:06,312 rospy.core INFO signal_shutdown [atexit]
+14:06:06,312 rospy.registration DEBUG registration cleanup starting
+14:06:06,312 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:06:06,312 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:06:06,312 rospy.registration DEBUG unregisterPublisher [/XXX]
+14:06:06,312 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:06:06,312 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:06:06,314 rospy.registration DEBUG registration cleanup: master calls complete
+14:06:06,314 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:06:06,314 rospy.impl.masterslave INFO atexit
+14:06:44,143 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:06:44,143 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:06:44,144 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:39225', ['TCPROS', 'simone-Aspire-V3-772G', 39225])
+14:06:44,245 rospy.tcpros DEBUG [/rosout]: writing header
+14:06:44,246 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:06:44,630 root DEBUG First action started
+14:06:46,5 root INFO Action 1 took: 2 seconds
+14:06:47,134 root INFO Action 2 took: 1 seconds
+14:06:48,312 root INFO Action 3 took: 1 seconds
+14:06:49,986 root INFO Action 4 took: 1 seconds
+14:06:50,931 root INFO Action 5 took: 1 seconds
+14:06:52,48 root INFO Action 6 took: 2 seconds
+14:06:53,99 root INFO Action 7 took: 1 seconds
+14:06:54,94 root INFO Action 8 took: 1 seconds
+14:06:55,146 root INFO Action 9 took: 1 seconds
+14:06:56,530 root INFO Action 10 took: 1 seconds
+14:06:57,605 root INFO Action 11 took: 1 seconds
+14:06:57,605 root DEBUG Last action completed
+14:06:57,606 rospy.core INFO signal_shutdown [atexit]
+14:06:57,606 rospy.registration DEBUG registration cleanup starting
+14:06:57,607 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:06:57,607 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:06:57,607 rospy.registration DEBUG unregisterPublisher [/XXX]
+14:06:57,607 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:06:57,608 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:06:57,611 rospy.registration DEBUG registration cleanup: master calls complete
+14:06:57,611 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:06:57,611 rospy.impl.masterslave INFO atexit
+14:09:08,627 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:09:08,627 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:09:08,627 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:37709', ['TCPROS', 'simone-Aspire-V3-772G', 37709])
+14:09:08,729 rospy.tcpros DEBUG [/rosout]: writing header
+14:09:08,730 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:09:09,261 root DEBUG First action started
+14:09:13,646 root INFO Action 1 took: 4 seconds
+14:09:14,146 root INFO Action 2 took: 1 seconds
+14:09:14,177 root INFO Action 3 took: 0 seconds
+14:09:14,277 root INFO Action 4 took: 0 seconds
+14:09:14,277 root INFO Action 5 took: 0 seconds
+14:09:14,278 root INFO Action 6 took: 0 seconds
+14:09:14,299 root INFO Action 7 took: 0 seconds
+14:09:14,329 root INFO Action 8 took: 0 seconds
+14:09:14,360 root INFO Action 9 took: 0 seconds
+14:09:14,461 root INFO Action 10 took: 0 seconds
+14:09:14,461 root INFO Action 11 took: 0 seconds
+14:09:14,461 root DEBUG Last action completed
+14:09:14,462 rospy.core INFO signal_shutdown [atexit]
+14:09:14,462 rospy.registration DEBUG registration cleanup starting
+14:09:14,462 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:09:14,462 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:09:14,462 rospy.registration DEBUG unregisterPublisher [/XXX]
+14:09:14,462 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:09:14,462 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:09:14,465 rospy.registration DEBUG registration cleanup: master calls complete
+14:09:14,465 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:09:14,466 rospy.impl.masterslave INFO atexit
+14:09:52,456 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:09:52,456 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:09:52,457 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:40987', ['TCPROS', 'simone-Aspire-V3-772G', 40987])
+14:09:52,559 rospy.tcpros DEBUG [/rosout]: writing header
+14:09:52,559 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:09:53,157 root DEBUG First action started
+14:09:58,883 root INFO Action 1 took: 5 seconds
+14:09:59,383 root INFO Action 2 took: 1 seconds
+14:09:59,413 root INFO Action 3 took: 0 seconds
+14:09:59,514 root INFO Action 4 took: 0 seconds
+14:09:59,514 root INFO Action 5 took: 0 seconds
+14:09:59,514 root INFO Action 6 took: 0 seconds
+14:09:59,535 root INFO Action 7 took: 0 seconds
+14:09:59,565 root INFO Action 8 took: 0 seconds
+14:09:59,595 root INFO Action 9 took: 0 seconds
+14:09:59,696 root INFO Action 10 took: 0 seconds
+14:09:59,696 root INFO Action 11 took: 0 seconds
+14:09:59,696 root DEBUG Last action completed
+14:09:59,696 rospy.core INFO signal_shutdown [atexit]
+14:09:59,696 rospy.registration DEBUG registration cleanup starting
+14:09:59,697 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:09:59,697 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:09:59,697 rospy.registration DEBUG unregisterPublisher [/XXX]
+14:09:59,697 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:09:59,697 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:09:59,699 rospy.registration DEBUG registration cleanup: master calls complete
+14:09:59,699 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:09:59,699 rospy.impl.masterslave INFO atexit
+14:10:36,30 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:10:36,30 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:10:36,31 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:46667', ['TCPROS', 'simone-Aspire-V3-772G', 46667])
+14:10:36,132 rospy.tcpros DEBUG [/rosout]: writing header
+14:10:36,133 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:10:36,360 root DEBUG First action started
+14:10:38,496 root INFO Action 1 took: 2 seconds
+14:10:39,138 root INFO Action 2 took: 1 seconds
+14:10:39,997 root INFO Action 3 took: 0 seconds
+14:10:40,583 root INFO Action 4 took: 1 seconds
+14:10:41,83 root INFO Action 5 took: 1 seconds
+14:10:41,113 root INFO Action 6 took: 0 seconds
+14:10:41,144 root INFO Action 7 took: 0 seconds
+14:10:41,174 root INFO Action 8 took: 0 seconds
+14:10:41,205 root INFO Action 9 took: 0 seconds
+14:10:41,305 root INFO Action 10 took: 0 seconds
+14:10:41,305 root INFO Action 11 took: 0 seconds
+14:10:41,306 root DEBUG Last action completed
+14:10:41,306 rospy.core INFO signal_shutdown [atexit]
+14:10:41,306 rospy.registration DEBUG registration cleanup starting
+14:10:41,306 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:10:41,306 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:10:41,306 rospy.registration DEBUG unregisterPublisher [/XXX]
+14:10:41,306 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:10:41,306 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:10:41,310 rospy.registration DEBUG registration cleanup: master calls complete
+14:10:41,310 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:10:41,310 rospy.impl.masterslave INFO atexit
+14:11:15,2 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:11:15,3 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:11:15,3 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:43695', ['TCPROS', 'simone-Aspire-V3-772G', 43695])
+14:11:15,105 rospy.tcpros DEBUG [/rosout]: writing header
+14:11:15,107 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:11:15,316 root DEBUG First action started
+14:11:17,29 root INFO Action 1 took: 2 seconds
+14:11:17,557 root INFO Action 2 took: 0 seconds
+14:11:18,119 root INFO Action 3 took: 1 seconds
+14:11:18,735 root INFO Action 4 took: 0 seconds
+14:11:19,235 root INFO Action 5 took: 1 seconds
+14:11:19,266 root INFO Action 6 took: 0 seconds
+14:11:19,297 root INFO Action 7 took: 0 seconds
+14:11:19,327 root INFO Action 8 took: 0 seconds
+14:11:19,358 root INFO Action 9 took: 0 seconds
+14:11:19,468 root INFO Action 10 took: 0 seconds
+14:11:19,469 root INFO Action 11 took: 0 seconds
+14:11:19,469 root DEBUG Last action completed
+14:11:19,469 rospy.core INFO signal_shutdown [atexit]
+14:11:19,469 rospy.registration DEBUG registration cleanup starting
+14:11:19,470 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:11:19,470 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:11:19,470 rospy.registration DEBUG unregisterPublisher [/XXX]
+14:11:19,470 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:11:19,471 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:11:19,472 rospy.registration DEBUG registration cleanup: master calls complete
+14:11:19,473 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:11:19,473 rospy.impl.masterslave INFO atexit
+14:12:20,436 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:12:20,436 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:12:20,436 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:37685', ['TCPROS', 'simone-Aspire-V3-772G', 37685])
+14:12:20,538 rospy.tcpros DEBUG [/rosout]: writing header
+14:12:20,539 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:12:31,580 root DEBUG First action started
+14:12:33,383 root INFO Action 1 took: 2 seconds
+14:12:34,477 root INFO Action 2 took: 1 seconds
+14:12:35,150 root INFO Action 3 took: 1 seconds
+14:12:36,67 root INFO Action 4 took: 1 seconds
+14:12:36,513 root INFO Action 5 took: 0 seconds
+14:12:36,996 root INFO Action 6 took: 0 seconds
+14:12:37,189 root INFO Action 7 took: 1 seconds
+14:12:37,367 root INFO Action 8 took: 0 seconds
+14:12:37,533 root INFO Action 9 took: 0 seconds
+14:12:37,692 root INFO Action 10 took: 0 seconds
+14:12:38,209 root INFO Action 11 took: 1 seconds
+14:12:38,209 root DEBUG Last action completed
+14:12:38,210 rospy.core INFO signal_shutdown [atexit]
+14:12:38,210 rospy.registration DEBUG registration cleanup starting
+14:12:38,211 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:12:38,211 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:12:38,211 rospy.registration DEBUG unregisterPublisher [/image]
+14:12:38,212 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:12:38,212 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:12:38,215 rospy.registration DEBUG registration cleanup: master calls complete
+14:12:38,216 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:12:38,216 rospy.impl.masterslave INFO atexit
+14:12:41,178 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:12:41,179 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:12:41,179 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:34109', ['TCPROS', 'simone-Aspire-V3-772G', 34109])
+14:12:41,281 rospy.tcpros DEBUG [/rosout]: writing header
+14:12:41,282 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:12:41,631 root DEBUG First action started
+14:12:42,581 root INFO Action 1 took: 1 seconds
+14:12:43,81 root INFO Action 2 took: 1 seconds
+14:12:43,111 root INFO Action 3 took: 0 seconds
+14:12:43,228 root INFO Action 4 took: 0 seconds
+14:12:43,228 root INFO Action 5 took: 0 seconds
+14:12:43,237 root INFO Action 6 took: 0 seconds
+14:12:43,237 root INFO Action 7 took: 0 seconds
+14:12:43,264 root INFO Action 8 took: 0 seconds
+14:12:43,294 root INFO Action 9 took: 0 seconds
+14:12:43,407 root INFO Action 10 took: 0 seconds
+14:12:43,407 root INFO Action 11 took: 0 seconds
+14:12:43,407 root DEBUG Last action completed
+14:12:43,408 rospy.core INFO signal_shutdown [atexit]
+14:12:43,408 rospy.registration DEBUG registration cleanup starting
+14:12:43,408 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:12:43,408 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:12:43,408 rospy.registration DEBUG unregisterPublisher [/image]
+14:12:43,408 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:12:43,408 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:12:43,410 rospy.registration DEBUG registration cleanup: master calls complete
+14:12:43,410 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:12:43,410 rospy.impl.masterslave INFO atexit
+14:13:05,27 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:13:05,27 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:13:05,27 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:40829', ['TCPROS', 'simone-Aspire-V3-772G', 40829])
+14:13:05,129 rospy.tcpros DEBUG [/rosout]: writing header
+14:13:05,130 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:13:14,102 rospy.impl.masterslave DEBUG requestTopic('/rostopic_15996_1624968793932', '/image', [['TCPROS']])
+14:13:14,103 rospy.impl.masterslave DEBUG requestTopic[/image]: choosing protocol TCPROS
+14:13:14,103 rospy.impl.masterslave DEBUG requestTopic('/rostopic_15996_1624968793932', '/image', [['TCPROS']]) returns (1, 'ready on simone-Aspire-V3-772G:40829', ['TCPROS', 'simone-Aspire-V3-772G', 40829])
+14:13:14,105 rospy.tcpros DEBUG [/image]: writing header
+14:13:14,105 rospy.internal INFO topic[/image] adding connection to [/rostopic_15996_1624968793932], count 0
+14:13:15,744 root DEBUG First action started
+14:13:17,393 root INFO Action 1 took: 2 seconds
+14:13:18,180 root INFO Action 2 took: 1 seconds
+14:13:18,790 root INFO Action 3 took: 0 seconds
+14:13:20,936 root INFO Action 4 took: 2 seconds
+14:13:21,929 root INFO Action 5 took: 1 seconds
+14:13:23,437 root INFO Action 6 took: 2 seconds
+14:13:24,389 root INFO Action 7 took: 1 seconds
+14:13:25,330 root INFO Action 8 took: 1 seconds
+14:13:27,112 root INFO Action 9 took: 2 seconds
+14:13:28,384 root INFO Action 10 took: 1 seconds
+14:13:29,947 root INFO Action 11 took: 1 seconds
+14:13:29,947 root DEBUG Last action completed
+14:13:29,948 rospy.core INFO signal_shutdown [atexit]
+14:13:29,948 rospy.registration DEBUG registration cleanup starting
+14:13:29,948 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:13:29,949 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:13:29,949 rospy.registration DEBUG unregisterPublisher [/image]
+14:13:29,949 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:13:29,949 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:13:29,952 rospy.registration DEBUG registration cleanup: master calls complete
+14:13:29,952 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:13:29,953 rospy.internal INFO topic[/image] removing connection to /rostopic_15996_1624968793932
+14:13:29,953 rospy.impl.masterslave INFO atexit
+14:18:06,229 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:18:06,229 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:18:06,229 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:36677', ['TCPROS', '130.251.13.172', 36677])
+14:18:06,331 rospy.tcpros DEBUG [/rosout]: writing header
+14:18:06,332 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:18:07,29 root DEBUG First action started
+14:18:10,627 root INFO Action 1 took: 3 seconds
+14:18:11,470 root INFO Action 2 took: 1 seconds
+14:18:12,198 root INFO Action 3 took: 1 seconds
+14:18:16,722 root INFO Action 4 took: 4 seconds
+14:18:17,808 root INFO Action 5 took: 1 seconds
+14:18:34,873 root INFO Action 6 took: 17 seconds
+14:18:35,555 root INFO Action 7 took: 1 seconds
+14:18:36,164 root INFO Action 8 took: 1 seconds
+14:19:34,150 root INFO Action 9 took: 58 seconds
+14:19:35,107 root INFO Action 10 took: 1 seconds
+14:19:36,757 root INFO Action 11 took: 1 seconds
+14:19:36,758 root DEBUG Last action completed
+14:19:36,758 rospy.core INFO signal_shutdown [atexit]
+14:19:36,758 rospy.registration DEBUG registration cleanup starting
+14:19:36,759 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:19:36,759 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:19:36,759 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:19:36,760 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:19:36,760 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:19:36,764 rospy.registration DEBUG registration cleanup: master calls complete
+14:19:36,764 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:19:36,764 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:19:36,764 rospy.impl.masterslave INFO atexit
+14:19:40,166 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:19:40,166 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:19:40,167 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:39449', ['TCPROS', '130.251.13.172', 39449])
+14:19:40,268 rospy.tcpros DEBUG [/rosout]: writing header
+14:19:40,269 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:19:40,909 root DEBUG First action started
+14:20:04,552 root INFO Action 1 took: 24 seconds
+14:20:04,978 root INFO Action 2 took: 0 seconds
+14:20:05,483 root INFO Action 3 took: 1 seconds
+14:20:06,102 root INFO Action 4 took: 1 seconds
+14:20:06,713 root INFO Action 5 took: 0 seconds
+14:20:07,396 root INFO Action 6 took: 1 seconds
+14:20:08,14 root INFO Action 7 took: 1 seconds
+14:20:08,888 root INFO Action 8 took: 0 seconds
+14:20:10,0 root INFO Action 9 took: 2 seconds
+14:20:11,286 root INFO Action 10 took: 1 seconds
+14:20:12,275 root INFO Action 11 took: 1 seconds
+14:20:12,275 root DEBUG Last action completed
+14:20:12,276 rospy.core INFO signal_shutdown [atexit]
+14:20:12,276 rospy.registration DEBUG registration cleanup starting
+14:20:12,276 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:20:12,277 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:20:12,277 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:20:12,277 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:20:12,277 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:20:12,283 rospy.registration DEBUG registration cleanup: master calls complete
+14:20:12,283 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:20:12,283 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:20:12,284 rospy.impl.masterslave INFO atexit
+14:21:24,464 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:21:24,464 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:21:24,464 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:36817', ['TCPROS', '130.251.13.172', 36817])
+14:21:24,466 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:21:24,466 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:21:24,523 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:21:24,523 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:21:24,523 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:36817', ['TCPROS', '130.251.13.172', 36817])
+14:21:24,625 rospy.tcpros DEBUG [/rosout]: writing header
+14:21:24,626 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:21:25,178 root DEBUG First action started
+14:24:21,32 root INFO Action 1 took: 176 seconds
+14:24:21,383 root INFO Action 2 took: 0 seconds
+14:24:21,570 root INFO Action 3 took: 0 seconds
+14:24:21,742 root INFO Action 4 took: 0 seconds
+14:24:21,907 root INFO Action 5 took: 0 seconds
+14:24:22,65 root INFO Action 6 took: 1 seconds
+14:24:22,222 root INFO Action 7 took: 0 seconds
+14:24:22,382 root INFO Action 8 took: 0 seconds
+14:24:22,537 root INFO Action 9 took: 0 seconds
+14:24:22,689 root INFO Action 10 took: 0 seconds
+14:24:22,844 root INFO Action 11 took: 0 seconds
+14:24:22,844 root DEBUG Last action completed
+14:24:22,844 rospy.core INFO signal_shutdown [atexit]
+14:24:22,844 rospy.registration DEBUG registration cleanup starting
+14:24:22,844 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:24:22,845 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:24:22,845 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:24:22,845 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:24:22,845 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:24:22,849 rospy.registration DEBUG registration cleanup: master calls complete
+14:24:22,849 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:24:22,850 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:24:22,850 rospy.impl.masterslave INFO atexit
+14:25:19,987 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:25:19,988 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:25:19,988 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:37127', ['TCPROS', '130.251.13.172', 37127])
+14:25:19,991 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:25:19,991 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:25:20,35 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:25:20,36 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:25:20,36 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:37127', ['TCPROS', '130.251.13.172', 37127])
+14:25:20,137 rospy.tcpros DEBUG [/rosout]: writing header
+14:25:20,138 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:25:20,714 root DEBUG First action started
+14:25:22,660 root INFO Action 1 took: 2 seconds
+14:25:23,322 root INFO Action 2 took: 1 seconds
+14:25:24,559 root INFO Action 3 took: 1 seconds
+14:25:27,389 root INFO Action 4 took: 3 seconds
+14:25:28,264 root INFO Action 5 took: 1 seconds
+14:25:33,997 root INFO Action 6 took: 5 seconds
+14:25:35,323 root INFO Action 7 took: 2 seconds
+14:25:36,870 root INFO Action 8 took: 1 seconds
+14:25:39,39 root INFO Action 9 took: 3 seconds
+14:25:41,169 root INFO Action 10 took: 2 seconds
+14:25:42,194 root INFO Action 11 took: 1 seconds
+14:25:42,195 root DEBUG Last action completed
+14:25:42,195 rospy.core INFO signal_shutdown [atexit]
+14:25:42,195 rospy.registration DEBUG registration cleanup starting
+14:25:42,195 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:25:42,195 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:25:42,195 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:25:42,195 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:25:42,196 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:25:42,201 rospy.registration DEBUG registration cleanup: master calls complete
+14:25:42,201 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:25:42,201 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:25:42,201 rospy.impl.masterslave INFO atexit
+14:25:59,210 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:25:59,211 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:25:59,211 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:32931', ['TCPROS', '130.251.13.172', 32931])
+14:25:59,212 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:25:59,213 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:25:59,297 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:25:59,297 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:25:59,297 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:32931', ['TCPROS', '130.251.13.172', 32931])
+14:25:59,399 rospy.tcpros DEBUG [/rosout]: writing header
+14:25:59,399 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:25:59,704 root DEBUG First action started
+14:26:01,810 root INFO Action 1 took: 2 seconds
+14:26:02,670 root INFO Action 2 took: 1 seconds
+14:26:03,380 root INFO Action 3 took: 1 seconds
+14:26:11,268 root INFO Action 4 took: 8 seconds
+14:26:12,136 root INFO Action 5 took: 1 seconds
+14:26:26,351 root INFO Action 6 took: 14 seconds
+14:26:27,304 root INFO Action 7 took: 1 seconds
+14:26:28,301 root INFO Action 8 took: 1 seconds
+14:26:30,179 root INFO Action 9 took: 2 seconds
+14:26:38,740 root INFO Action 10 took: 8 seconds
+14:26:40,49 root INFO Action 11 took: 2 seconds
+14:26:40,49 root DEBUG Last action completed
+14:26:40,49 rospy.core INFO signal_shutdown [atexit]
+14:26:40,49 rospy.registration DEBUG registration cleanup starting
+14:26:40,50 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:26:40,50 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:26:40,50 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:26:40,50 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:26:40,50 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:26:40,53 rospy.registration DEBUG registration cleanup: master calls complete
+14:26:40,53 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:26:40,54 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:26:40,54 rospy.impl.masterslave INFO atexit
+14:29:01,569 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:29:01,570 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:29:01,570 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:33313', ['TCPROS', '130.251.13.172', 33313])
+14:29:01,671 rospy.tcpros DEBUG [/rosout]: writing header
+14:29:01,672 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:29:02,94 root DEBUG First action started
+14:29:03,986 root INFO Action 1 took: 1 seconds
+14:29:05,455 root INFO Action 2 took: 2 seconds
+14:29:06,482 root INFO Action 3 took: 1 seconds
+14:29:15,259 root INFO Action 4 took: 9 seconds
+14:29:16,286 root INFO Action 5 took: 1 seconds
+14:29:37,493 root INFO Action 6 took: 21 seconds
+14:29:38,999 root INFO Action 7 took: 1 seconds
+14:29:40,581 root INFO Action 8 took: 2 seconds
+14:29:42,147 root INFO Action 9 took: 2 seconds
+14:29:44,679 root INFO Action 10 took: 2 seconds
+14:29:45,13 root INFO Action 11 took: 1 seconds
+14:29:45,13 root DEBUG Last action completed
+14:29:45,13 rospy.core INFO signal_shutdown [atexit]
+14:29:45,13 rospy.registration DEBUG registration cleanup starting
+14:29:45,14 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:29:45,14 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:29:45,14 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:29:45,14 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:29:45,15 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:29:45,19 rospy.registration DEBUG registration cleanup: master calls complete
+14:29:45,19 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:29:45,20 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:29:45,20 rospy.impl.masterslave INFO atexit
+14:29:57,102 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:29:57,102 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:29:57,103 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:39535', ['TCPROS', '130.251.13.172', 39535])
+14:29:57,105 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:29:57,105 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:29:57,159 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:29:57,159 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:29:57,159 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:39535', ['TCPROS', '130.251.13.172', 39535])
+14:29:57,261 rospy.tcpros DEBUG [/rosout]: writing header
+14:29:57,262 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:29:57,711 root DEBUG First action started
+14:29:58,891 root INFO Action 1 took: 1 seconds
+14:29:59,517 root INFO Action 2 took: 1 seconds
+14:29:59,955 root INFO Action 3 took: 0 seconds
+14:30:03,670 root INFO Action 4 took: 4 seconds
+14:30:04,357 root INFO Action 5 took: 1 seconds
+14:30:05,485 root INFO Action 6 took: 1 seconds
+14:30:05,755 root INFO Action 7 took: 0 seconds
+14:30:06,87 root INFO Action 8 took: 1 seconds
+14:30:07,851 root INFO Action 9 took: 1 seconds
+14:30:08,1 root INFO Action 10 took: 1 seconds
+14:30:08,176 root INFO Action 11 took: 0 seconds
+14:30:08,176 root DEBUG Last action completed
+14:30:08,177 rospy.core INFO signal_shutdown [atexit]
+14:30:08,177 rospy.registration DEBUG registration cleanup starting
+14:30:08,177 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:30:08,177 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:30:08,177 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:30:08,178 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:30:08,178 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:30:08,182 rospy.registration DEBUG registration cleanup: master calls complete
+14:30:08,182 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:30:08,182 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:30:08,182 rospy.impl.masterslave INFO atexit
+14:30:24,523 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:30:24,523 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:30:24,524 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:37523', ['TCPROS', '130.251.13.172', 37523])
+14:30:24,525 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:30:24,526 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:30:24,605 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:30:24,605 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:30:24,606 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:37523', ['TCPROS', '130.251.13.172', 37523])
+14:30:24,707 rospy.tcpros DEBUG [/rosout]: writing header
+14:30:24,708 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:30:25,124 root DEBUG First action started
+14:30:26,181 root INFO Action 1 took: 1 seconds
+14:30:26,940 root INFO Action 2 took: 0 seconds
+14:30:27,562 root INFO Action 3 took: 1 seconds
+14:30:28,678 root INFO Action 4 took: 1 seconds
+14:30:29,28 root INFO Action 5 took: 1 seconds
+14:30:37,718 root INFO Action 6 took: 8 seconds
+14:30:37,938 root INFO Action 7 took: 0 seconds
+14:30:38,103 root INFO Action 8 took: 1 seconds
+14:30:38,279 root INFO Action 9 took: 0 seconds
+14:30:38,441 root INFO Action 10 took: 0 seconds
+14:30:38,610 root INFO Action 11 took: 0 seconds
+14:30:38,611 root DEBUG Last action completed
+14:30:38,611 rospy.core INFO signal_shutdown [atexit]
+14:30:38,611 rospy.registration DEBUG registration cleanup starting
+14:30:38,611 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:30:38,612 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:30:38,612 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:30:38,612 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:30:38,612 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:30:38,616 rospy.registration DEBUG registration cleanup: master calls complete
+14:30:38,617 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:30:38,617 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:30:38,617 rospy.impl.masterslave INFO atexit
+14:33:02,780 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:33:02,781 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:33:02,781 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:46737', ['TCPROS', '130.251.13.172', 46737])
+14:33:02,783 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:33:02,784 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:33:02,828 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:33:02,829 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:33:02,829 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:46737', ['TCPROS', '130.251.13.172', 46737])
+14:33:02,931 rospy.tcpros DEBUG [/rosout]: writing header
+14:33:02,932 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:33:03,569 root DEBUG First action started
+14:33:05,78 root INFO Action 1 took: 2 seconds
+14:33:06,392 root INFO Action 2 took: 1 seconds
+14:33:07,290 root INFO Action 3 took: 1 seconds
+14:33:08,367 root INFO Action 4 took: 1 seconds
+14:33:09,175 root INFO Action 5 took: 1 seconds
+14:33:10,73 root INFO Action 6 took: 1 seconds
+14:33:10,879 root INFO Action 7 took: 0 seconds
+14:33:11,684 root INFO Action 8 took: 1 seconds
+14:33:12,537 root INFO Action 9 took: 1 seconds
+14:33:13,730 root INFO Action 10 took: 1 seconds
+14:33:14,565 root INFO Action 11 took: 1 seconds
+14:33:14,584 root DEBUG Last action completed
+14:33:14,584 rospy.core INFO signal_shutdown [atexit]
+14:33:14,584 rospy.registration DEBUG registration cleanup starting
+14:33:14,584 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:33:14,584 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:33:14,584 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:33:14,585 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:33:14,585 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:33:14,590 rospy.registration DEBUG registration cleanup: master calls complete
+14:33:14,590 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:33:14,590 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:33:14,590 rospy.impl.masterslave INFO atexit
+14:34:11,862 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:34:11,862 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:34:11,863 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:40621', ['TCPROS', '130.251.13.172', 40621])
+14:34:11,865 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:34:11,865 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:34:11,931 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:34:11,931 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:34:11,931 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:40621', ['TCPROS', '130.251.13.172', 40621])
+14:34:12,33 rospy.tcpros DEBUG [/rosout]: writing header
+14:34:12,33 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:34:12,246 root DEBUG First action started
+14:34:13,59 root INFO Action 1 took: 1 seconds
+14:34:13,778 root INFO Action 2 took: 0 seconds
+14:34:14,502 root INFO Action 3 took: 1 seconds
+14:34:15,170 root INFO Action 4 took: 1 seconds
+14:34:15,804 root INFO Action 5 took: 0 seconds
+14:34:16,486 root INFO Action 6 took: 1 seconds
+14:34:17,159 root INFO Action 7 took: 1 seconds
+14:34:17,837 root INFO Action 8 took: 0 seconds
+14:34:18,515 root INFO Action 9 took: 1 seconds
+14:34:19,411 root INFO Action 10 took: 1 seconds
+14:34:20,899 root INFO Action 11 took: 1 seconds
+14:34:20,909 root DEBUG Last action completed
+14:34:20,910 rospy.core INFO signal_shutdown [atexit]
+14:34:20,910 rospy.registration DEBUG registration cleanup starting
+14:34:20,911 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:34:20,911 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:34:20,911 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:34:20,911 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:34:20,911 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:34:20,916 rospy.registration DEBUG registration cleanup: master calls complete
+14:34:20,916 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:34:20,917 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:34:20,917 rospy.impl.masterslave INFO atexit
+14:34:47,336 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:34:47,336 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:34:47,336 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:37485', ['TCPROS', '130.251.13.172', 37485])
+14:34:47,338 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:34:47,339 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 1
+14:34:47,386 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:34:47,387 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:34:47,387 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:37485', ['TCPROS', '130.251.13.172', 37485])
+14:34:47,489 rospy.tcpros DEBUG [/rosout]: writing header
+14:34:47,490 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:34:47,526 root DEBUG First action started
+14:34:49,172 root INFO Action 1 took: 2 seconds
+14:34:49,928 root INFO Action 2 took: 0 seconds
+14:34:50,625 root INFO Action 3 took: 1 seconds
+14:34:52,281 root INFO Action 4 took: 2 seconds
+14:34:52,862 root INFO Action 5 took: 0 seconds
+14:34:54,254 root INFO Action 6 took: 2 seconds
+14:34:54,808 root INFO Action 7 took: 0 seconds
+14:34:55,427 root INFO Action 8 took: 1 seconds
+14:34:57,153 root INFO Action 9 took: 2 seconds
+14:34:58,554 root INFO Action 10 took: 1 seconds
+14:34:59,808 root INFO Action 11 took: 1 seconds
+14:34:59,818 root DEBUG Last action completed
+14:34:59,821 rospy.core INFO signal_shutdown [atexit]
+14:34:59,822 rospy.registration DEBUG registration cleanup starting
+14:34:59,822 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:34:59,822 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:34:59,822 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:34:59,822 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:34:59,822 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:34:59,831 rospy.registration DEBUG registration cleanup: master calls complete
+14:34:59,831 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:34:59,831 rospy.internal INFO topic[/robot/xdisplay] removing connection to /rostopic_18438_1624970084777
+14:34:59,832 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:34:59,832 rospy.impl.masterslave INFO atexit
+14:35:12,657 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:35:12,657 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:35:12,658 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:36913', ['TCPROS', '130.251.13.172', 36913])
+14:35:12,660 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:35:12,661 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:35:12,727 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:35:12,727 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:35:12,728 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:36913', ['TCPROS', '130.251.13.172', 36913])
+14:35:12,829 rospy.tcpros DEBUG [/rosout]: writing header
+14:35:12,830 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:35:13,155 root DEBUG First action started
+14:35:14,686 root INFO Action 1 took: 1 seconds
+14:35:15,676 root INFO Action 2 took: 1 seconds
+14:35:16,660 root INFO Action 3 took: 1 seconds
+14:35:18,219 root INFO Action 4 took: 2 seconds
+14:35:19,111 root INFO Action 5 took: 1 seconds
+14:35:20,745 root INFO Action 6 took: 1 seconds
+14:35:21,537 root INFO Action 7 took: 1 seconds
+14:35:22,392 root INFO Action 8 took: 1 seconds
+14:35:24,21 root INFO Action 9 took: 2 seconds
+14:35:25,605 root INFO Action 10 took: 1 seconds
+14:35:27,271 root INFO Action 11 took: 2 seconds
+14:35:27,281 root DEBUG Last action completed
+14:35:27,282 rospy.core INFO signal_shutdown [atexit]
+14:35:27,282 rospy.registration DEBUG registration cleanup starting
+14:35:27,282 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:35:27,282 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:35:27,283 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:35:27,283 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:35:27,283 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:35:27,289 rospy.registration DEBUG registration cleanup: master calls complete
+14:35:27,289 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:35:27,290 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:35:27,290 rospy.impl.masterslave INFO atexit
+14:35:35,276 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:35:35,277 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:35:35,277 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:34219', ['TCPROS', '130.251.13.172', 34219])
+14:35:35,279 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:35:35,280 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:35:35,365 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:35:35,365 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:35:35,365 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:34219', ['TCPROS', '130.251.13.172', 34219])
+14:35:35,467 rospy.tcpros DEBUG [/rosout]: writing header
+14:35:35,468 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:35:35,892 root DEBUG First action started
+14:35:36,534 root INFO Action 1 took: 1 seconds
+14:35:38,104 root INFO Action 2 took: 2 seconds
+14:35:38,992 root INFO Action 3 took: 0 seconds
+14:35:41,707 root INFO Action 4 took: 3 seconds
+14:35:42,358 root INFO Action 5 took: 1 seconds
+14:35:43,328 root INFO Action 6 took: 1 seconds
+14:35:43,770 root INFO Action 7 took: 0 seconds
+14:35:44,251 root INFO Action 8 took: 1 seconds
+14:35:46,58 root INFO Action 9 took: 2 seconds
+14:35:48,290 root INFO Action 10 took: 2 seconds
+14:35:50,198 root INFO Action 11 took: 2 seconds
+14:35:50,204 root DEBUG Last action completed
+14:35:50,205 rospy.core INFO signal_shutdown [atexit]
+14:35:50,206 rospy.registration DEBUG registration cleanup starting
+14:35:50,206 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:35:50,206 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:35:50,206 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:35:50,206 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:35:50,206 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:35:50,212 rospy.registration DEBUG registration cleanup: master calls complete
+14:35:50,213 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:35:50,213 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:35:50,213 rospy.impl.masterslave INFO atexit
+14:36:47,425 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:36:47,426 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:36:47,426 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:35453', ['TCPROS', '130.251.13.172', 35453])
+14:36:47,528 rospy.tcpros DEBUG [/rosout]: writing header
+14:36:47,529 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:36:48,77 root DEBUG First action started
+14:36:49,34 root INFO Action 1 took: 1 seconds
+14:36:49,880 root INFO Action 2 took: 0 seconds
+14:36:50,407 root INFO Action 3 took: 1 seconds
+14:36:52,27 root INFO Action 4 took: 2 seconds
+14:36:52,475 root INFO Action 5 took: 0 seconds
+14:36:53,723 root INFO Action 6 took: 1 seconds
+14:36:54,99 root INFO Action 7 took: 1 seconds
+14:36:54,550 root INFO Action 8 took: 0 seconds
+14:36:56,422 root INFO Action 9 took: 2 seconds
+14:36:57,939 root INFO Action 10 took: 1 seconds
+14:36:59,269 root INFO Action 11 took: 2 seconds
+14:36:59,278 root DEBUG Last action completed
+14:37:00,280 rospy.core INFO signal_shutdown [atexit]
+14:37:00,281 rospy.registration DEBUG registration cleanup starting
+14:37:00,281 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:37:00,281 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:37:00,281 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:37:00,282 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:37:00,282 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:37:00,286 rospy.registration DEBUG registration cleanup: master calls complete
+14:37:00,286 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:37:00,286 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:37:00,287 rospy.impl.masterslave INFO atexit
+14:37:05,698 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:37:05,699 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:37:05,700 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:37:05,700 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:37:05,700 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:36597', ['TCPROS', '130.251.13.172', 36597])
+14:37:05,701 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:36597', ['TCPROS', '130.251.13.172', 36597])
+14:37:05,703 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:37:05,704 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:37:05,803 rospy.tcpros DEBUG [/rosout]: writing header
+14:37:05,804 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:37:06,159 root DEBUG First action started
+14:37:06,966 root INFO Action 1 took: 0 seconds
+14:37:07,408 root INFO Action 2 took: 1 seconds
+14:37:07,873 root INFO Action 3 took: 0 seconds
+14:37:08,915 root INFO Action 4 took: 1 seconds
+14:37:09,208 root INFO Action 5 took: 1 seconds
+14:37:10,93 root INFO Action 6 took: 1 seconds
+14:37:10,626 root INFO Action 7 took: 0 seconds
+14:37:11,358 root INFO Action 8 took: 1 seconds
+14:37:12,314 root INFO Action 9 took: 1 seconds
+14:37:13,528 root INFO Action 10 took: 1 seconds
+14:37:14,380 root INFO Action 11 took: 1 seconds
+14:37:14,390 root DEBUG Last action completed
+14:37:15,393 rospy.core INFO signal_shutdown [atexit]
+14:37:15,393 rospy.registration DEBUG registration cleanup starting
+14:37:15,394 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:37:15,394 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:37:15,394 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:37:15,394 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:37:15,394 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:37:15,399 rospy.registration DEBUG registration cleanup: master calls complete
+14:37:15,399 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:37:15,399 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:37:15,399 rospy.impl.masterslave INFO atexit
+14:45:33,737 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:45:33,737 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:45:33,737 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:34351', ['TCPROS', '130.251.13.172', 34351])
+14:45:33,839 rospy.tcpros DEBUG [/rosout]: writing header
+14:45:33,840 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:45:34,302 root DEBUG First action started
+14:45:35,531 root INFO Action 1 took: 1 seconds
+14:45:36,416 root INFO Action 2 took: 1 seconds
+14:45:37,354 root INFO Action 3 took: 1 seconds
+14:45:40,428 root INFO Action 4 took: 3 seconds
+14:45:41,533 root INFO Action 5 took: 1 seconds
+14:45:48,775 root INFO Action 6 took: 7 seconds
+14:45:49,975 root INFO Action 7 took: 1 seconds
+14:45:50,154 rospy.core INFO signal_shutdown [atexit]
+14:45:50,154 rospy.registration DEBUG registration cleanup starting
+14:45:50,154 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:45:50,154 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:45:50,154 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:45:50,154 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:45:50,154 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:45:50,157 rospy.registration DEBUG registration cleanup: master calls complete
+14:45:50,157 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:45:50,158 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:45:50,158 rospy.impl.masterslave INFO atexit
+14:46:58,174 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:46:58,174 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:46:58,174 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:44697', ['TCPROS', '130.251.13.172', 44697])
+14:46:58,177 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:46:58,177 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:46:58,263 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:46:58,263 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:46:58,263 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:44697', ['TCPROS', '130.251.13.172', 44697])
+14:46:58,365 rospy.tcpros DEBUG [/rosout]: writing header
+14:46:58,366 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:46:58,946 root DEBUG First action started
+14:47:00,213 root INFO Action 1 took: 2 seconds
+14:47:01,299 root INFO Action 2 took: 1 seconds
+14:47:02,548 root INFO Action 3 took: 1 seconds
+14:47:04,543 root INFO Action 4 took: 2 seconds
+14:47:05,655 root INFO Action 5 took: 1 seconds
+14:47:07,105 root INFO Action 6 took: 2 seconds
+14:47:08,44 root INFO Action 7 took: 1 seconds
+14:47:12,951 root INFO Action 8 took: 4 seconds
+14:47:15,46 root INFO Action 9 took: 3 seconds
+14:47:17,250 root INFO Action 10 took: 2 seconds
+14:47:19,232 root INFO Action 11 took: 2 seconds
+14:47:19,239 root DEBUG Last action completed
+14:47:20,241 rospy.core INFO signal_shutdown [atexit]
+14:47:20,241 rospy.registration DEBUG registration cleanup starting
+14:47:20,242 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:47:20,242 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:47:20,242 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:47:20,242 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:47:20,242 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:47:20,246 rospy.registration DEBUG registration cleanup: master calls complete
+14:47:20,246 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:47:20,246 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:47:20,246 rospy.impl.masterslave INFO atexit
+14:49:06,759 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:49:06,759 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:49:06,760 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:33067', ['TCPROS', '130.251.13.172', 33067])
+14:49:06,862 rospy.tcpros DEBUG [/rosout]: writing header
+14:49:06,863 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:49:07,674 root DEBUG First action started
+14:49:35,725 root INFO Action 1 took: 28 seconds
+14:50:01,174 root INFO Action 2 took: 26 seconds
+14:50:01,340 root INFO Action 3 took: 0 seconds
+14:50:01,488 root INFO Action 4 took: 0 seconds
+14:50:01,629 root INFO Action 5 took: 0 seconds
+14:50:01,786 root INFO Action 6 took: 0 seconds
+14:50:01,941 root INFO Action 7 took: 0 seconds
+14:50:02,91 root INFO Action 8 took: 1 seconds
+14:50:02,237 root INFO Action 9 took: 0 seconds
+14:50:02,404 root INFO Action 10 took: 0 seconds
+14:50:02,818 root INFO Action 11 took: 0 seconds
+14:50:02,831 root DEBUG Last action completed
+14:50:03,835 rospy.core INFO signal_shutdown [atexit]
+14:50:03,835 rospy.registration DEBUG registration cleanup starting
+14:50:03,836 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:50:03,836 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:50:03,836 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:50:03,837 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:50:03,837 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:50:03,841 rospy.registration DEBUG registration cleanup: master calls complete
+14:50:03,842 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:50:03,842 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:50:03,842 rospy.impl.masterslave INFO atexit
+14:50:22,304 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:50:22,304 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:50:22,304 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:42333', ['TCPROS', '130.251.13.172', 42333])
+14:50:22,306 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:50:22,306 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:50:22,372 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:50:22,373 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:50:22,373 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:42333', ['TCPROS', '130.251.13.172', 42333])
+14:50:22,475 rospy.tcpros DEBUG [/rosout]: writing header
+14:50:22,476 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:50:23,137 root DEBUG First action started
+14:50:25,70 root INFO Action 1 took: 2 seconds
+14:50:26,283 root INFO Action 2 took: 1 seconds
+14:50:28,331 root INFO Action 3 took: 2 seconds
+14:50:40,65 root INFO Action 4 took: 12 seconds
+14:50:40,827 root INFO Action 5 took: 0 seconds
+14:51:14,86 root INFO Action 6 took: 34 seconds
+14:51:14,537 root INFO Action 7 took: 0 seconds
+14:51:23,892 root INFO Action 8 took: 9 seconds
+14:51:29,929 root INFO Action 9 took: 6 seconds
+14:51:35,952 root INFO Action 10 took: 6 seconds
+14:51:36,578 root INFO Action 11 took: 1 seconds
+14:51:36,592 root DEBUG Last action completed
+14:51:37,595 rospy.core INFO signal_shutdown [atexit]
+14:51:37,596 rospy.registration DEBUG registration cleanup starting
+14:51:37,596 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:51:37,596 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:51:37,597 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:51:37,597 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:51:37,597 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:51:37,601 rospy.registration DEBUG registration cleanup: master calls complete
+14:51:37,601 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:51:37,602 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:51:37,602 rospy.impl.masterslave INFO atexit
+14:58:23,397 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+14:58:23,397 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+14:58:23,397 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:39851', ['TCPROS', '130.251.13.172', 39851])
+14:58:23,400 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+14:58:23,400 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+14:58:23,456 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+14:58:23,456 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+14:58:23,456 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:39851', ['TCPROS', '130.251.13.172', 39851])
+14:58:23,558 rospy.tcpros DEBUG [/rosout]: writing header
+14:58:23,559 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+14:58:24,492 root DEBUG First action started
+14:58:27,657 root INFO Action 1 took: 3 seconds
+14:58:32,549 root INFO Action 2 took: 5 seconds
+14:58:33,858 root INFO Action 3 took: 1 seconds
+14:58:34,631 root INFO Action 4 took: 1 seconds
+14:58:35,890 root INFO Action 5 took: 1 seconds
+14:58:37,747 root INFO Action 6 took: 2 seconds
+14:58:38,685 root INFO Action 7 took: 1 seconds
+14:58:42,172 root INFO Action 8 took: 4 seconds
+14:58:43,324 root INFO Action 9 took: 1 seconds
+14:58:45,188 root INFO Action 10 took: 2 seconds
+14:58:49,807 root INFO Action 11 took: 4 seconds
+14:58:49,819 root DEBUG Last action completed
+14:58:50,821 rospy.core INFO signal_shutdown [atexit]
+14:58:50,821 rospy.registration DEBUG registration cleanup starting
+14:58:50,821 rospy.registration DEBUG unregisterPublisher [/rosout]
+14:58:50,822 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+14:58:50,822 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+14:58:50,822 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+14:58:50,822 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+14:58:50,827 rospy.registration DEBUG registration cleanup: master calls complete
+14:58:50,827 rospy.internal INFO topic[/rosout] removing connection to /rosout
+14:58:50,828 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+14:58:50,828 rospy.impl.masterslave INFO atexit
+15:02:35,184 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']])
+15:02:35,184 rospy.impl.masterslave DEBUG requestTopic[/baxter_action]: choosing protocol TCPROS
+15:02:35,184 rospy.impl.masterslave DEBUG requestTopic('/server_endpoint', '/baxter_action', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:45023', ['TCPROS', '130.251.13.172', 45023])
+15:02:35,187 rospy.tcpros DEBUG [/baxter_action]: writing header
+15:02:35,187 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 0
+15:02:35,223 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+15:02:35,223 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+15:02:35,223 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:45023', ['TCPROS', '130.251.13.172', 45023])
+15:02:35,225 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+15:02:35,225 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+15:02:35,283 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+15:02:35,283 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+15:02:35,283 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:45023', ['TCPROS', '130.251.13.172', 45023])
+15:02:35,385 rospy.tcpros DEBUG [/rosout]: writing header
+15:02:35,386 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+15:02:43,707 root DEBUG First action started
+15:03:30,787 root INFO Action 1 took: 47 seconds
+15:04:17,410 root INFO Action 2 took: 47 seconds
+15:04:54,811 rospy.tcpros DEBUG [/baxter_action]: writing header
+15:04:54,812 rospy.internal INFO topic[/baxter_action] adding connection to [/server_endpoint], count 1
+15:04:54,812 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+15:04:55,80 rospy.internal DEBUG removing connection to /server_endpoint, connection error detected
+15:04:55,81 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+15:04:55,911 root INFO Action 3 took: 38 seconds
+15:04:56,411 root INFO Action 4 took: 1 seconds
+15:04:56,441 root INFO Action 5 took: 0 seconds
+15:04:56,470 root INFO Action 6 took: 0 seconds
+15:04:56,503 root INFO Action 7 took: 0 seconds
+15:04:56,532 root INFO Action 8 took: 0 seconds
+15:04:56,564 root INFO Action 9 took: 0 seconds
+15:04:56,678 root INFO Action 10 took: 0 seconds
+15:04:56,679 root INFO Action 11 took: 0 seconds
+15:04:56,685 root DEBUG Last action completed
+15:04:57,686 rospy.core INFO signal_shutdown [atexit]
+15:04:57,687 rospy.registration DEBUG registration cleanup starting
+15:04:57,687 rospy.registration DEBUG unregisterPublisher [/rosout]
+15:04:57,687 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+15:04:57,688 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+15:04:57,688 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+15:04:57,688 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+15:04:57,696 rospy.registration DEBUG registration cleanup: master calls complete
+15:04:57,696 rospy.internal INFO topic[/rosout] removing connection to /rosout
+15:04:57,697 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+15:04:57,697 rospy.impl.masterslave INFO atexit
+15:24:19,724 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+15:24:19,725 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+15:24:19,725 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:43249', ['TCPROS', '130.251.13.172', 43249])
+15:24:19,726 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+15:24:19,727 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+15:24:19,774 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+15:24:19,775 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+15:24:19,775 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:43249', ['TCPROS', '130.251.13.172', 43249])
+15:24:19,876 rospy.tcpros DEBUG [/rosout]: writing header
+15:24:19,878 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+15:24:20,413 root DEBUG First action started
+15:24:21,865 root INFO Action 1 took: 1 seconds
+15:24:23,71 root INFO Action 2 took: 2 seconds
+15:24:24,581 root INFO Action 3 took: 1 seconds
+15:24:26,774 root INFO Action 4 took: 2 seconds
+15:26:12,369 root INFO Action 5 took: 106 seconds
+15:26:29,259 root INFO Action 6 took: 17 seconds
+15:26:30,307 root INFO Action 7 took: 1 seconds
+15:26:34,227 root INFO Action 8 took: 4 seconds
+15:26:35,331 root INFO Action 9 took: 1 seconds
+15:26:36,981 root INFO Action 10 took: 1 seconds
+15:26:38,114 root INFO Action 11 took: 2 seconds
+15:26:38,127 root DEBUG Last action completed
+15:26:39,131 rospy.core INFO signal_shutdown [atexit]
+15:26:39,132 rospy.registration DEBUG registration cleanup starting
+15:26:39,132 rospy.registration DEBUG unregisterPublisher [/rosout]
+15:26:39,132 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+15:26:39,133 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+15:26:39,133 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+15:26:39,133 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+15:26:39,137 rospy.registration DEBUG registration cleanup: master calls complete
+15:26:39,137 rospy.internal INFO topic[/rosout] removing connection to /rosout
+15:26:39,138 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+15:26:39,138 rospy.impl.masterslave INFO atexit
+15:26:49,128 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+15:26:49,128 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+15:26:49,128 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:35001', ['TCPROS', '130.251.13.172', 35001])
+15:26:49,130 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+15:26:49,130 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+15:26:49,193 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+15:26:49,193 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+15:26:49,194 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:35001', ['TCPROS', '130.251.13.172', 35001])
+15:26:49,295 rospy.tcpros DEBUG [/rosout]: writing header
+15:26:49,295 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+15:27:06,656 root DEBUG First action started
+15:27:52,886 root INFO Action 1 took: 46 seconds
+15:28:37,844 root INFO Action 2 took: 45 seconds
+15:29:10,816 root INFO Action 3 took: 33 seconds
+15:29:42,351 root INFO Action 4 took: 32 seconds
+15:30:26,727 root INFO Action 5 took: 44 seconds
+15:31:10,447 root INFO Action 6 took: 44 seconds
+15:31:47,72 rospy.internal DEBUG removing connection to /server_endpoint, connection error detected
+15:31:47,73 rospy.internal INFO topic[/baxter_action] removing connection to /server_endpoint
+15:31:47,611 rospy.core INFO signal_shutdown [signal-2]
+15:31:47,611 rospy.registration DEBUG registration cleanup starting
+15:31:47,611 rospy.registration DEBUG unregisterPublisher [/rosout]
+15:31:47,612 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+15:31:47,612 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+15:31:47,612 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+15:31:47,613 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+15:31:47,616 rospy.registration DEBUG registration cleanup: master calls complete
+15:31:47,616 rospy.internal INFO topic[/rosout] removing connection to /rosout
+15:31:47,616 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+15:31:47,616 rospy.impl.masterslave INFO signal-2
+15:31:48,359 root INFO Action 7 took: 38 seconds
+15:31:48,506 root INFO Action 8 took: 0 seconds
+15:31:48,647 root INFO Action 9 took: 0 seconds
+15:31:48,797 root INFO Action 10 took: 0 seconds
+15:31:48,948 root INFO Action 11 took: 0 seconds
+15:31:48,956 root DEBUG Last action completed
+15:31:49,957 rospy.core INFO signal_shutdown [atexit]
+15:48:03,427 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+15:48:03,427 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+15:48:03,427 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:37999', ['TCPROS', '130.251.13.172', 37999])
+15:48:03,429 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+15:48:03,430 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+15:48:03,510 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+15:48:03,510 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+15:48:03,511 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:37999', ['TCPROS', '130.251.13.172', 37999])
+15:48:03,613 rospy.tcpros DEBUG [/rosout]: writing header
+15:48:03,614 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+15:48:04,61 root DEBUG First action started
+15:48:05,433 root INFO Action 1 took: 1 seconds
+15:48:06,340 root INFO Action 2 took: 1 seconds
+15:48:07,146 root INFO Action 3 took: 1 seconds
+15:48:08,426 root INFO Action 4 took: 1 seconds
+15:48:09,326 root INFO Action 5 took: 1 seconds
+15:48:10,565 root INFO Action 6 took: 1 seconds
+15:48:11,535 root INFO Action 7 took: 1 seconds
+15:48:12,410 root INFO Action 8 took: 1 seconds
+15:48:13,634 root INFO Action 9 took: 1 seconds
+15:48:14,501 root INFO Action 10 took: 1 seconds
+15:48:15,334 root INFO Action 11 took: 1 seconds
+15:48:15,349 root DEBUG Last action completed
+15:48:16,353 rospy.core INFO signal_shutdown [atexit]
+15:48:16,353 rospy.registration DEBUG registration cleanup starting
+15:48:16,354 rospy.registration DEBUG unregisterPublisher [/rosout]
+15:48:16,354 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+15:48:16,354 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+15:48:16,354 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+15:48:16,354 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+15:48:16,359 rospy.registration DEBUG registration cleanup: master calls complete
+15:48:16,359 rospy.internal INFO topic[/rosout] removing connection to /rosout
+15:48:16,359 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+15:48:16,359 rospy.impl.masterslave INFO atexit
+15:48:19,92 root DEBUG First action started
+15:48:19,132 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+15:48:19,132 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+15:48:19,133 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:43039', ['TCPROS', '130.251.13.172', 43039])
+15:48:19,234 rospy.tcpros DEBUG [/rosout]: writing header
+15:48:19,235 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+15:48:20,134 root INFO Action 1 took: 1 seconds
+15:48:21,138 root INFO Action 2 took: 1 seconds
+15:48:22,337 root INFO Action 3 took: 1 seconds
+15:48:23,726 root INFO Action 4 took: 1 seconds
+15:48:25,190 root INFO Action 5 took: 2 seconds
+15:48:25,904 root INFO Action 6 took: 0 seconds
+15:48:27,97 root INFO Action 7 took: 2 seconds
+15:48:28,409 root INFO Action 8 took: 1 seconds
+15:48:29,733 root INFO Action 9 took: 1 seconds
+15:48:31,100 root INFO Action 10 took: 2 seconds
+15:48:34,271 root INFO Action 11 took: 3 seconds
+15:48:34,283 root DEBUG Last action completed
+15:48:35,287 rospy.core INFO signal_shutdown [atexit]
+15:48:35,287 rospy.registration DEBUG registration cleanup starting
+15:48:35,288 rospy.registration DEBUG unregisterPublisher [/rosout]
+15:48:35,288 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+15:48:35,288 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+15:48:35,289 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+15:48:35,289 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+15:48:35,293 rospy.registration DEBUG registration cleanup: master calls complete
+15:48:35,293 rospy.internal INFO topic[/rosout] removing connection to /rosout
+15:48:35,294 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+15:48:35,294 rospy.impl.masterslave INFO atexit
+15:57:49,310 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+15:57:49,311 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+15:57:49,311 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:32799', ['TCPROS', '130.251.13.172', 32799])
+15:57:49,312 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+15:57:49,313 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+15:57:49,366 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+15:57:49,366 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+15:57:49,367 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:32799', ['TCPROS', '130.251.13.172', 32799])
+15:57:49,468 rospy.tcpros DEBUG [/rosout]: writing header
+15:57:49,469 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+15:57:50,200 root DEBUG First action started
+15:57:51,145 root INFO Action 1 took: 1 seconds
+15:57:51,968 root INFO Action 2 took: 0 seconds
+15:57:52,780 root INFO Action 3 took: 1 seconds
+15:58:18,30 root INFO Action 4 took: 26 seconds
+15:58:25,783 root INFO Action 5 took: 7 seconds
+15:58:25,952 root INFO Action 6 took: 0 seconds
+15:58:26,95 root INFO Action 7 took: 1 seconds
+15:58:26,250 root INFO Action 8 took: 0 seconds
+15:58:26,405 root INFO Action 9 took: 0 seconds
+15:58:26,554 root INFO Action 10 took: 0 seconds
+15:58:26,695 root INFO Action 11 took: 0 seconds
+15:58:26,708 root DEBUG Last action completed
+15:58:27,710 rospy.core INFO signal_shutdown [atexit]
+15:58:27,710 rospy.registration DEBUG registration cleanup starting
+15:58:27,710 rospy.registration DEBUG unregisterPublisher [/rosout]
+15:58:27,711 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+15:58:27,711 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+15:58:27,711 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+15:58:27,712 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+15:58:27,716 rospy.registration DEBUG registration cleanup: master calls complete
+15:58:27,716 rospy.internal INFO topic[/rosout] removing connection to /rosout
+15:58:27,717 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+15:58:27,717 rospy.impl.masterslave INFO atexit
+16:01:03,977 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']])
+16:01:03,977 rospy.impl.masterslave DEBUG requestTopic[/robot/xdisplay]: choosing protocol TCPROS
+16:01:03,978 rospy.impl.masterslave DEBUG requestTopic('/xdisplay', '/robot/xdisplay', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:39009', ['TCPROS', '130.251.13.172', 39009])
+16:01:03,980 rospy.tcpros DEBUG [/robot/xdisplay]: writing header
+16:01:03,980 rospy.internal INFO topic[/robot/xdisplay] adding connection to [/xdisplay], count 0
+16:01:04,47 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+16:01:04,48 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+16:01:04,48 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:39009', ['TCPROS', '130.251.13.172', 39009])
+16:01:04,150 rospy.tcpros DEBUG [/rosout]: writing header
+16:01:04,151 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+16:01:04,515 root DEBUG First action started
+16:01:05,400 root INFO Action 1 took: 1 seconds
+16:01:06,280 root INFO Action 2 took: 1 seconds
+16:01:07,177 root INFO Action 3 took: 1 seconds
+16:01:08,807 root INFO Action 4 took: 1 seconds
+16:01:13,119 root INFO Action 5 took: 5 seconds
+16:01:21,157 root INFO Action 6 took: 8 seconds
+16:01:21,947 root INFO Action 7 took: 0 seconds
+16:01:22,377 root INFO Action 8 took: 1 seconds
+16:01:23,20 root INFO Action 9 took: 1 seconds
+16:01:23,421 root INFO Action 10 took: 0 seconds
+16:01:23,844 root INFO Action 11 took: 0 seconds
+16:01:23,860 root DEBUG Last action completed
+16:01:24,862 rospy.core INFO signal_shutdown [atexit]
+16:01:24,862 rospy.registration DEBUG registration cleanup starting
+16:01:24,863 rospy.registration DEBUG unregisterPublisher [/rosout]
+16:01:24,864 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+16:01:24,864 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+16:01:24,864 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+16:01:24,864 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+16:01:24,868 rospy.registration DEBUG registration cleanup: master calls complete
+16:01:24,868 rospy.internal INFO topic[/rosout] removing connection to /rosout
+16:01:24,868 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+16:01:24,868 rospy.impl.masterslave INFO atexit
+16:19:49,913 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+16:19:49,914 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+16:19:49,914 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:38745', ['TCPROS', '130.251.13.172', 38745])
+16:19:50,16 rospy.tcpros DEBUG [/rosout]: writing header
+16:19:50,17 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+16:19:50,757 root DEBUG First action started
+16:19:51,716 root INFO Action 1 took: 1 seconds
+16:19:52,615 root INFO Action 2 took: 1 seconds
+16:19:53,529 root INFO Action 3 took: 1 seconds
+16:19:54,884 root INFO Action 4 took: 1 seconds
+16:19:55,966 root INFO Action 5 took: 1 seconds
+16:19:58,935 root INFO Action 6 took: 3 seconds
+16:20:00,270 root INFO Action 7 took: 2 seconds
+16:20:02,783 root INFO Action 8 took: 2 seconds
+16:20:02,905 rospy.core INFO signal_shutdown [atexit]
+16:20:02,905 rospy.registration DEBUG registration cleanup starting
+16:20:02,905 rospy.registration DEBUG unregisterPublisher [/rosout]
+16:20:02,905 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+16:20:02,905 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+16:20:02,905 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+16:20:02,905 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+16:20:02,909 rospy.registration DEBUG registration cleanup: master calls complete
+16:20:02,909 rospy.internal INFO topic[/rosout] removing connection to /rosout
+16:20:02,909 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+16:20:02,909 rospy.impl.masterslave INFO atexit
+16:20:15,456 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+16:20:15,457 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+16:20:15,457 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:38685', ['TCPROS', '130.251.13.172', 38685])
+16:20:15,559 rospy.tcpros DEBUG [/rosout]: writing header
+16:20:15,560 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+16:20:15,970 root DEBUG First action started
+16:20:17,325 root INFO Action 1 took: 2 seconds
+16:20:18,721 root INFO Action 2 took: 1 seconds
+16:20:37,771 root INFO Action 3 took: 19 seconds
+16:20:40,31 root INFO Action 4 took: 3 seconds
+16:20:45,492 root INFO Action 5 took: 5 seconds
+16:20:51,350 root INFO Action 6 took: 6 seconds
+16:20:56,916 root INFO Action 7 took: 5 seconds
+16:21:01,32 root INFO Action 8 took: 5 seconds
+16:21:03,726 root INFO Action 9 took: 2 seconds
+16:21:16,269 root INFO Action 10 took: 13 seconds
+16:21:17,501 root INFO Action 11 took: 1 seconds
+16:21:17,515 root DEBUG Last action completed
+16:21:18,517 rospy.core INFO signal_shutdown [atexit]
+16:21:18,517 rospy.registration DEBUG registration cleanup starting
+16:21:18,518 rospy.registration DEBUG unregisterPublisher [/rosout]
+16:21:18,518 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+16:21:18,518 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+16:21:18,519 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+16:21:18,519 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+16:21:18,523 rospy.registration DEBUG registration cleanup: master calls complete
+16:21:18,524 rospy.internal INFO topic[/rosout] removing connection to /rosout
+16:21:18,524 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+16:21:18,525 rospy.impl.masterslave INFO atexit
+16:21:55,905 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']])
+16:21:55,905 rospy.impl.masterslave DEBUG requestTopic[/rosout]: choosing protocol TCPROS
+16:21:55,905 rospy.impl.masterslave DEBUG requestTopic('/rosout', '/rosout', [['TCPROS']]) returns (1, 'ready on 130.251.13.172:38489', ['TCPROS', '130.251.13.172', 38489])
+16:21:56,7 rospy.tcpros DEBUG [/rosout]: writing header
+16:21:56,8 rospy.internal INFO topic[/rosout] adding connection to [/rosout], count 0
+16:21:57,760 root DEBUG First action started
+16:22:04,605 root INFO Action 1 took: 7 seconds
+16:22:10,773 root INFO Action 2 took: 6 seconds
+16:22:15,760 root INFO Action 3 took: 5 seconds
+16:22:22,903 root INFO Action 4 took: 7 seconds
+16:22:35,500 root INFO Action 5 took: 13 seconds
+16:22:47,432 root INFO Action 6 took: 12 seconds
+16:22:59,447 root INFO Action 7 took: 12 seconds
+16:23:05,684 root INFO Action 8 took: 6 seconds
+16:23:10,52 root INFO Action 9 took: 5 seconds
+16:23:17,231 root INFO Action 10 took: 7 seconds
+16:23:21,322 root INFO Action 11 took: 4 seconds
+16:23:21,335 root DEBUG Last action completed
+16:23:22,338 rospy.core INFO signal_shutdown [atexit]
+16:23:22,339 rospy.registration DEBUG registration cleanup starting
+16:23:22,339 rospy.registration DEBUG unregisterPublisher [/rosout]
+16:23:22,340 rospy.registration DEBUG unregisterPublisher [/baxter_action]
+16:23:22,340 rospy.registration DEBUG unregisterPublisher [/robot/xdisplay]
+16:23:22,340 rospy.registration DEBUG unregisterService [/plan_manager/get_loggers]
+16:23:22,340 rospy.registration DEBUG unregisterService [/plan_manager/set_logger_level]
+16:23:22,345 rospy.registration DEBUG registration cleanup: master calls complete
+16:23:22,345 rospy.internal INFO topic[/rosout] removing connection to /rosout
+16:23:22,346 rospy.internal INFO topic[/robot/xdisplay] removing connection to /xdisplay
+16:23:22,346 rospy.impl.masterslave INFO atexit
