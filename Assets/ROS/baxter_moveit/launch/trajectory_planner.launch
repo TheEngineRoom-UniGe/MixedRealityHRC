@@ -10,7 +10,7 @@
     </group>
     
     <group ns="right_group">
-	  <node name="trajectory_planner_right" pkg="baxter_moveit" type="trajectory_planner.py" args="--offset 0.13" output="screen"  />
+	  <node name="trajectory_planner_right" pkg="baxter_moveit" type="trajectory_planner.py" args="--offset 0.135" output="screen"  />
 	  <include file="$(find baxter_moveit)/launch/demo.launch" />
     </group>
     

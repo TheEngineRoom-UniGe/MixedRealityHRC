@@ -130,7 +130,7 @@ def trajectory_callback(msg):
 
                 # If operation is component handover, wait several seconds before returning object
                 if(operation == "component_handover" and i == wait_before_returning):
-                        rospy.sleep(10)
+                        rospy.sleep(15)
 
             print("Joint Trajectory Action Complete")
     

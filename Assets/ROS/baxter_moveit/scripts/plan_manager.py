@@ -10,6 +10,9 @@ import math
 import rospkg
 import logging
 import cv2
+import serial
+import threading
+import time
 
 from std_msgs.msg import String, Bool
 from sensor_msgs.msg import JointState, Image
@@ -20,19 +23,67 @@ from baxter_moveit.srv import TrajectoryService, TrajectoryServiceRequest, Traje
 
 from cv_bridge import CvBridge
 
+# Global variables needed for interactivity
+has_received_command = False
+
+class SerialReaderTask:
+
+    def __init__(self):
+        self.running = True
+        self.t_received_command = 0
+
+    def handle_data(self, data):
+        if(int(data)== 1 and abs(time.time() - self.t_received_command) > 1.0):
+            global has_received_command
+            global t_received_command
+            has_received_command = True
+            self.t_received_command = time.time()
+
+    def terminate(self):
+        self.running = False
+
+    def run(self, ser):
+        while self.running:
+            reading = ser.read(1).decode()
+            self.handle_data(reading)
+
+
+def logging_callback(msg):
+    logging.info(msg)
+
 def main():
 
     rospy.init_node('plan_manager')
     
-    action_pub = rospy.Publisher('baxter_action', BaxterAction, queue_size=10)
-    image_pub = rospy.Publisher('/robot/xdisplay', Image, queue_size=10)
-    
     rospack = rospkg.RosPack()
     pkg_path = rospack.get_path('baxter_moveit')
+    logging.basicConfig(filename=pkg_path + "/logs/experiment2.log",
+                                filemode='a',
+                                format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                                datefmt='%H:%M:%S',
+                                level=logging.INFO,
+                                force=True)
+                                
+    # Start thread that listens to serial port                            
+    serial_port = serial.Serial('/dev/ttyACM0')
+    reader_task = SerialReaderTask()
+    thread = threading.Thread(target=reader_task.run, args=(serial_port,))
+    thread.start()
     
+    action_pub = rospy.Publisher('baxter_action', BaxterAction, queue_size=10)
+    image_pub = rospy.Publisher('/robot/xdisplay', Image, queue_size=10)
+    rospy.Subscriber("left_group/baxter_joint_trajectory", BaxterTrajectory, logging_callback)
+    rospy.Subscriber("right_group/baxter_joint_trajectory", BaxterTrajectory, logging_callback)
+        
     # Read plan steps from file
     with open(pkg_path + '/config/plan.txt') as f:
         plan_steps = f.readlines()
+        
+    # Publish start screen image on robot's display
+    img = cv2.imread(pkg_path + "/images/start.png")
+    img_msg = CvBridge().cv2_to_imgmsg(img)
+    rospy.sleep(0.25)
+    image_pub.publish(img_msg)
         
     # Prepare dictionary of images file names and step indices
     images_dict = {
@@ -48,16 +99,14 @@ def main():
         10: "step10",
     }    
 
-    logging.basicConfig(filename=pkg_path + "/logs/test.log",
-                                filemode='a',
-                                format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
-                                datefmt='%H:%M:%S',
-                                level=logging.DEBUG,
-                                force=True)
-
     # Wait for user's tap before sending actions
-    input("Press Enter to start planning..")
-    logging.debug("First action started")
+    print("Press joystick to start collaboration ..")
+    global has_received_command
+    while(not has_received_command):
+       rospy.sleep(0.25)
+    has_received_command = False
+
+    logging.info("First action started")
     t_start = rospy.Time.now()
     
     for i,step in enumerate(plan_steps):
@@ -95,18 +144,25 @@ def main():
             img_msg = CvBridge().cv2_to_imgmsg(img_resized)
             image_pub.publish(img_msg)
 
-        input("Press Enter for next action..")
+        print("Press joystick for next action ..")
+        while(not has_received_command):
+           rospy.sleep(0.25)
+        has_received_command = False
+
         elapsed = rospy.Time.now().secs - t_start.secs
         logging.info("Action " + str(i+1) + " took: " + str(elapsed) + " seconds")
         t_start = rospy.Time.now()
 
-    # Publish black screen image to display at the end of planning steps
-    img = cv2.imread(pkg_path + "/images/black.png")
+    # Publish end screen image to display at the end of planning steps
+    img = cv2.imread(pkg_path + "/images/end.png")
     img_msg = CvBridge().cv2_to_imgmsg(img)
     image_pub.publish(img_msg)
-    logging.debug("Last action completed")
-    rospy.sleep(1)
-
+    logging.info("Last action completed")
+    
+    reader_task.terminate()
+    thread.join()
+    
+    rospy.sleep(0.5)
 
 if __name__ == "__main__":
     main()
