@@ -18,13 +18,15 @@ public class MRTKPlanController : MonoBehaviour
     private float jointAssignmentWaitRest = 0.01f;
     private float jointAssignmentWait = 0.005f;
     private float oneSecondWait = 1.0f;
-    private float placeWait = 5.0f;
-    private float toolHandoverPoseWait = 10.0f;
-    private float componentHandoverPoseWait = 5.0f;
+    private float placeWait = 9.0f;
+    private float toolHandoverPoseWait = 9.0f;
+    private float componentHandoverPoseWait = 17.0f;
 
     // Offset variables for picking and placing objects
     private readonly Vector3 liftOffset = Vector3.up * 0.1f;
     private readonly Vector3 dropOffset = Vector3.up * 0.02f;
+    private readonly float depthOffset = 0.16f;
+    private readonly float heightOffset = 0.525f;
 
     // Scene objects (robot and interactables)
     private GameObject baxter;
@@ -135,19 +137,16 @@ public class MRTKPlanController : MonoBehaviour
         GoToRestPosition("both");
     }
 
-    BaxterMoveitJoints InitialJointConfig(string arm)
+    BaxterArmJoints InitialJointConfig(string arm)
     {
-        BaxterMoveitJoints joints = new BaxterMoveitJoints();
+        BaxterArmJoints joints = new BaxterArmJoints();
         var indices = (arm == "left") ? leftIndices : rightIndices;
 
-        joints.joint_00 = Mathf.Rad2Deg * (float)restPosition[indices[0]];
-        joints.joint_01 = Mathf.Rad2Deg * (float)restPosition[indices[1]];
-        joints.joint_02 = Mathf.Rad2Deg * (float)restPosition[indices[2]];
-        joints.joint_03 = Mathf.Rad2Deg * (float)restPosition[indices[3]];
-        joints.joint_04 = Mathf.Rad2Deg * (float)restPosition[indices[4]];
-        joints.joint_05 = Mathf.Rad2Deg * (float)restPosition[indices[5]];
-        joints.joint_06 = Mathf.Rad2Deg * (float)restPosition[indices[6]];
-
+        joints.angles = new double[numRobotJoints];
+        for(int i = 0; i < numRobotJoints; i++)
+        {
+            joints.angles[i] = Mathf.Rad2Deg * (float)restPosition[indices[i]];
+        }
         return joints;
     }
 
@@ -233,7 +232,7 @@ public class MRTKPlanController : MonoBehaviour
         };
 
         request.arm = arm;
-        request.joints_input = InitialJointConfig(arm);
+        request.joints = InitialJointConfig(arm);
 
         return request;
     }
@@ -273,7 +272,7 @@ public class MRTKPlanController : MonoBehaviour
         };
 
         request.arm = arm;
-        request.joints_input = InitialJointConfig(arm);
+        request.joints = InitialJointConfig(arm);
 
         return request;
     }
@@ -310,7 +309,7 @@ public class MRTKPlanController : MonoBehaviour
         };
 
         request.arm = arm;
-        request.joints_input = InitialJointConfig(arm);
+        request.joints = InitialJointConfig(arm);
 
         return request;
     }
@@ -356,7 +355,7 @@ public class MRTKPlanController : MonoBehaviour
         };
 
         request.arm = arm;
-        request.joints_input = InitialJointConfig(arm);
+        request.joints = InitialJointConfig(arm);
 
         return request;
     }
@@ -380,17 +379,9 @@ public class MRTKPlanController : MonoBehaviour
         {
             var arm = response.arm;
             var initialJointConfig = InitialJointConfig(arm);
-            float[] lastJointState = {
-                (float)initialJointConfig.joint_00,
-                (float)initialJointConfig.joint_01,
-                (float)initialJointConfig.joint_02,
-                (float)initialJointConfig.joint_03,
-                (float)initialJointConfig.joint_04,
-                (float)initialJointConfig.joint_05,
-                (float)initialJointConfig.joint_06,
-                };
+            double[] lastJointState = initialJointConfig.angles;
             // For every trajectory plan returned
-            int steps = 50;
+            int steps = 25;
             var jointArticulationBodies = leftJointArticulationBodies;
             if (arm == "right")
             {
@@ -403,13 +394,13 @@ public class MRTKPlanController : MonoBehaviour
                 for (int jointConfigIndex = 0; jointConfigIndex < response.trajectories[poseIndex].joint_trajectory.points.Length; jointConfigIndex++)
                 {
                     var jointPositions = response.trajectories[poseIndex].joint_trajectory.points[jointConfigIndex].positions;
-                    float[] result = jointPositions.Select(r => (float)r * Mathf.Rad2Deg).ToArray();
+                    double[] result = jointPositions.Select(r => (double)r * Mathf.Rad2Deg).ToArray();
                     for (int i = 0; i <= steps; i++)
                     {
                         for (int joint = 0; joint < jointArticulationBodies.Length; joint++)
                         {
                             var joint1XDrive = jointArticulationBodies[joint].xDrive;
-                            joint1XDrive.target = lastJointState[joint] + (result[joint] - lastJointState[joint]) * (1.0f / steps) * i;
+                            joint1XDrive.target = (float)(lastJointState[joint] + (result[joint] - lastJointState[joint]) * (1.0f / steps) * i);
                             jointArticulationBodies[joint].xDrive = joint1XDrive;
                         }
 
@@ -625,11 +616,6 @@ public class MRTKPlanController : MonoBehaviour
     public void SpawnRobotAndInterface()
     {
         var imTargetPosition = ImageTarget.transform.position;
-        var depthOffset = depthOffsetSlider.GetComponent<PinchSlider>().SliderValue;
-        var heightOffset = heightOffsetSlider.GetComponent<PinchSlider>().SliderValue;
-
-        depthOffsetSlider.SetActive(false);
-        heightOffsetSlider.SetActive(false);
         ImageTarget.GetComponent<Behaviour>().enabled = false;
 
         foreach (GameObject button in buttons)

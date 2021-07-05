@@ -13,7 +13,7 @@ namespace RosMessageTypes.BaxterMoveit
 
         public string operation;
         public string arm;
-        public BaxterMoveitJoints joints_input;
+        public BaxterArmJoints joints;
         public Geometry.Pose pick_pose;
         public Geometry.Pose[] waypoints;
         public Geometry.Pose place_pose;
@@ -22,17 +22,17 @@ namespace RosMessageTypes.BaxterMoveit
         {
             this.operation = "";
             this.arm = "";
-            this.joints_input = new BaxterMoveitJoints();
+            this.joints = new BaxterArmJoints();
             this.pick_pose = new Geometry.Pose();
             this.waypoints = new Geometry.Pose[0];
             this.place_pose = new Geometry.Pose();
         }
 
-        public TrajectoryServiceRequest(string operation, string arm, BaxterMoveitJoints joints_input, Geometry.Pose pick_pose, Geometry.Pose[] waypoints, Geometry.Pose place_pose)
+        public TrajectoryServiceRequest(string operation, string arm, BaxterArmJoints joints, Geometry.Pose pick_pose, Geometry.Pose[] waypoints, Geometry.Pose place_pose)
         {
             this.operation = operation;
             this.arm = arm;
-            this.joints_input = joints_input;
+            this.joints = joints;
             this.pick_pose = pick_pose;
             this.waypoints = waypoints;
             this.place_pose = place_pose;
@@ -42,7 +42,7 @@ namespace RosMessageTypes.BaxterMoveit
             var listOfSerializations = new List<byte[]>();
             listOfSerializations.Add(SerializeString(this.operation));
             listOfSerializations.Add(SerializeString(this.arm));
-            listOfSerializations.AddRange(joints_input.SerializationStatements());
+            listOfSerializations.AddRange(joints.SerializationStatements());
             listOfSerializations.AddRange(pick_pose.SerializationStatements());
             
             listOfSerializations.Add(BitConverter.GetBytes(waypoints.Length));
@@ -63,7 +63,7 @@ namespace RosMessageTypes.BaxterMoveit
             offset += 4;
             this.arm = DeserializeString(data, offset, armStringBytesLength);
             offset += armStringBytesLength;
-            offset = this.joints_input.Deserialize(data, offset);
+            offset = this.joints.Deserialize(data, offset);
             offset = this.pick_pose.Deserialize(data, offset);
             
             var waypointsArrayLength = DeserializeLength(data, offset);
@@ -84,7 +84,7 @@ namespace RosMessageTypes.BaxterMoveit
             return "TrajectoryServiceRequest: " +
             "\noperation: " + operation.ToString() +
             "\narm: " + arm.ToString() +
-            "\njoints_input: " + joints_input.ToString() +
+            "\njoints: " + joints.ToString() +
             "\npick_pose: " + pick_pose.ToString() +
             "\nwaypoints: " + System.String.Join(", ", waypoints.ToList()) +
             "\nplace_pose: " + place_pose.ToString();

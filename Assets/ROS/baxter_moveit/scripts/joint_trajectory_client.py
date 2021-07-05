@@ -25,7 +25,9 @@ import baxter_tools
 from baxter_moveit.msg import BaxterTrajectory
 from baxter_interface import CHECK_VERSION
 
+# Global variables
 limb = ""
+wait_time = 0
 
 class Trajectory(object):
 
@@ -88,49 +90,52 @@ class Trajectory(object):
 
 def trajectory_callback(msg):
     
+    
     if(limb == msg.arm):
-            rospy.sleep(5)
-            arm = msg.arm
-            operation = msg.operation
+        global wait_time
+        rospy.sleep(wait_time)
 
-            n = len(msg.trajectory)
-            close_gripper_idx = 1
-            open_gripper_idx = n - 2
-            wait_before_returning = n - 3
-            wait_before_opening =  1 if operation == "pickandplace" else 2
+        arm = msg.arm
+        operation = msg.operation
 
-            for i in range(len(msg.trajectory)):
+        n = len(msg.trajectory)
+        close_gripper_idx = 1
+        open_gripper_idx = n - 2
+        wait_before_returning = n - 3
+        wait_before_opening =  1 if operation == "pickandplace" else 2
 
-                traj = Trajectory(arm)
-                # Start with open gripper
-                if i == 0:
-                        traj.open_gripper()
+        for i in range(len(msg.trajectory)):
 
-                rospy.on_shutdown(traj.stop)
-                # Command Current Joint Positions first
-                limb_interface = baxter_interface.limb.Limb(arm)
+            traj = Trajectory(arm)
+            # Start with open gripper
+            if i == 0:
+                    traj.open_gripper()
 
-                t = 1
-                step = 0.75 if i != 1 else 2
-                for point in msg.trajectory[i].joint_trajectory.points:
-                    traj.add_point(point.positions, point.velocities, point.accelerations, t)
-                    t += step
+            rospy.on_shutdown(traj.stop)
+            # Command Current Joint Positions first
+            limb_interface = baxter_interface.limb.Limb(arm)
 
-                traj.start()
-                traj.wait(t + 1)
-                # Close gripper on grasping
-                if i == close_gripper_idx:
-                        rospy.sleep(1)
-                        traj.close_gripper()
-                # Reopen gripper on release
-                elif i == open_gripper_idx:
-                        rospy.sleep(wait_before_opening)
-                        traj.open_gripper()
-                        rospy.sleep(1)
+            t = 1
+            step = 0.5 if i != 1 else 2
+            for point in msg.trajectory[i].joint_trajectory.points:
+                traj.add_point(point.positions, point.velocities, point.accelerations, t)
+                t += step
 
-                # If operation is component handover, wait several seconds before returning object
-                if(operation == "component_handover" and i == wait_before_returning):
-                        rospy.sleep(15)
+            traj.start()
+            traj.wait(t + 1)
+            # Close gripper on grasping
+            if i == close_gripper_idx:
+                    rospy.sleep(1)
+                    traj.close_gripper()
+            # Reopen gripper on release
+            elif i == open_gripper_idx:
+                    rospy.sleep(wait_before_opening)
+                    traj.open_gripper()
+                    rospy.sleep(1)
+
+            # If operation is component handover, wait several seconds before returning object
+            if(operation == "component_handover" and i == wait_before_returning):
+                    rospy.sleep(15)
 
             print("Joint Trajectory Action Complete")
     
@@ -141,12 +146,25 @@ def main():
                                      description=main.__doc__)
     required = parser.add_argument_group('required arguments')
     required.add_argument(
-        '-l', '--limb', required=True, choices=['left', 'right'],
-        help='send joint trajectory to which limb'
+        '-l',
+        '--limb',
+        required=True,
+        choices=['left', 'right'],
+        help='Send joint trajectory to which limb'
     )
+    required.add_argument(
+        '-w',
+        '--wait_time',
+        required=True,
+        type=int,
+        help='Wait time before moving real robot'
+    )
+
     args = parser.parse_args(rospy.myargv()[1:])
     global limb
+    global wait_time
     limb = args.limb
+    wait_time = args.wait_time
 
     print("Initializing node... ")
     rospy.init_node("rsdk_joint_trajectory_client_%s" % (limb,))

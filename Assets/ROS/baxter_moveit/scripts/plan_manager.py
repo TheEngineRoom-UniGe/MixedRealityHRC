@@ -23,20 +23,17 @@ from baxter_moveit.srv import TrajectoryService, TrajectoryServiceRequest, Traje
 
 from cv_bridge import CvBridge
 
-# Global variables needed for interactivity
-has_received_command = False
-
+# Separate thread that listens to serial port for user input
 class SerialReaderTask:
 
     def __init__(self):
         self.running = True
-        self.t_received_command = 0
+        self.has_received_command = False
+        self.t_received_command = 0.0
 
     def handle_data(self, data):
-        if(int(data)== 1 and abs(time.time() - self.t_received_command) > 1.0):
-            global has_received_command
-            global t_received_command
-            has_received_command = True
+        if(int(data)== 1 and abs(time.time() - self.t_received_command) > 10.0):
+            self.has_received_command = True
             self.t_received_command = time.time()
 
     def terminate(self):
@@ -53,11 +50,11 @@ def logging_callback(msg):
 
 def main():
 
-    rospy.init_node('plan_manager')
+    rospy.init_node('plan_manager', disable_signals=True)
     
     rospack = rospkg.RosPack()
     pkg_path = rospack.get_path('baxter_moveit')
-    logging.basicConfig(filename=pkg_path + "/logs/experiment2.log",
+    logging.basicConfig(filename=pkg_path + "/logs/test.log",
                                 filemode='a',
                                 format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                                 datefmt='%H:%M:%S',
@@ -102,9 +99,14 @@ def main():
     # Wait for user's tap before sending actions
     print("Press joystick to start collaboration ..")
     global has_received_command
-    while(not has_received_command):
-       rospy.sleep(0.25)
-    has_received_command = False
+    while(not reader_task.has_received_command):
+        try:
+             rospy.sleep(0.25)
+        except KeyboardInterrupt:
+            reader_task.terminate()
+            thread.join()
+            sys.exit(1)
+    reader_task.has_received_command = False
 
     logging.info("First action started")
     t_start = rospy.Time.now()
@@ -145,9 +147,14 @@ def main():
             image_pub.publish(img_msg)
 
         print("Press joystick for next action ..")
-        while(not has_received_command):
-           rospy.sleep(0.25)
-        has_received_command = False
+        while(not reader_task.has_received_command):
+           try:
+                rospy.sleep(0.25)
+           except KeyboardInterrupt:
+               reader_task.terminate()
+               thread.join()
+               sys.exit(1)
+        reader_task.has_received_command = False
 
         elapsed = rospy.Time.now().secs - t_start.secs
         logging.info("Action " + str(i+1) + " took: " + str(elapsed) + " seconds")

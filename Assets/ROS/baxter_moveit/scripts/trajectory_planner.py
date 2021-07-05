@@ -21,7 +21,7 @@ from baxter_moveit.srv import JointConfigService
 
 # Global variables
 trajectory_publisher = rospy.Publisher('baxter_joint_trajectory', BaxterTrajectory, queue_size=10)
-height_offset = 0.13
+height_offset = 0.0
        
 # Plan straight line trajectory
 def plan_cartesian_trajectory(move_group, limb, destination_pose, start_joint_angles):
@@ -106,15 +106,7 @@ def pick_and_place(req):
     move_group = moveit_commander.MoveGroupCommander(group_name)
 
     # Initial joint configuration
-    current_robot_joint_configuration = [
-        math.radians(req.joints_input.joint_00),
-        math.radians(req.joints_input.joint_01),
-        math.radians(req.joints_input.joint_02),
-        math.radians(req.joints_input.joint_03),
-        math.radians(req.joints_input.joint_04),
-        math.radians(req.joints_input.joint_05),
-        math.radians(req.joints_input.joint_06),
-    ]
+    current_robot_joint_configuration = [math.radians(req.joints.angles[i]) for i in range(7)]
     initial_joint_configuration = copy.deepcopy(current_robot_joint_configuration)
     
     # Pre grasp - position gripper directly above target object
@@ -179,15 +171,7 @@ def tool_handover(req):
     move_group = moveit_commander.MoveGroupCommander(group_name)
 
     # Initial joint configuration
-    current_robot_joint_configuration = [
-        math.radians(req.joints_input.joint_00),
-        math.radians(req.joints_input.joint_01),
-        math.radians(req.joints_input.joint_02),
-        math.radians(req.joints_input.joint_03),
-        math.radians(req.joints_input.joint_04),
-        math.radians(req.joints_input.joint_05),
-        math.radians(req.joints_input.joint_06),
-    ]
+    current_robot_joint_configuration = [math.radians(req.joints.angles[i]) for i in range(7)]
     initial_joint_configuration = copy.deepcopy(current_robot_joint_configuration)
 
     # Pre grasp - position gripper directly above target object
@@ -246,15 +230,7 @@ def component_handover(req):
     move_group = moveit_commander.MoveGroupCommander(group_name)
 
     # Initial joint configuration
-    current_robot_joint_configuration = [
-        math.radians(req.joints_input.joint_00),
-        math.radians(req.joints_input.joint_01),
-        math.radians(req.joints_input.joint_02),
-        math.radians(req.joints_input.joint_03),
-        math.radians(req.joints_input.joint_04),
-        math.radians(req.joints_input.joint_05),
-        math.radians(req.joints_input.joint_06),
-    ]
+    current_robot_joint_configuration = [math.radians(req.joints.angles[i]) for i in range(7)]
     initial_joint_configuration = copy.deepcopy(current_robot_joint_configuration)
 
     # Pre grasp - position gripper directly above target object

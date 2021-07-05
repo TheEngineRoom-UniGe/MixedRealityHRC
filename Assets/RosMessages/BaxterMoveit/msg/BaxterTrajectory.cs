@@ -11,20 +11,28 @@ namespace RosMessageTypes.BaxterMoveit
     {
         public const string RosMessageName = "baxter_moveit/BaxterTrajectory";
 
+        public string operation;
+        public string arm;
         public Moveit.RobotTrajectory[] trajectory;
 
         public BaxterTrajectory()
         {
+            this.operation = "";
+            this.arm = "";
             this.trajectory = new Moveit.RobotTrajectory[0];
         }
 
-        public BaxterTrajectory(Moveit.RobotTrajectory[] trajectory)
+        public BaxterTrajectory(string operation, string arm, Moveit.RobotTrajectory[] trajectory)
         {
+            this.operation = operation;
+            this.arm = arm;
             this.trajectory = trajectory;
         }
         public override List<byte[]> SerializationStatements()
         {
             var listOfSerializations = new List<byte[]>();
+            listOfSerializations.Add(SerializeString(this.operation));
+            listOfSerializations.Add(SerializeString(this.arm));
             
             listOfSerializations.Add(BitConverter.GetBytes(trajectory.Length));
             foreach(var entry in trajectory)
@@ -35,6 +43,14 @@ namespace RosMessageTypes.BaxterMoveit
 
         public override int Deserialize(byte[] data, int offset)
         {
+            var operationStringBytesLength = DeserializeLength(data, offset);
+            offset += 4;
+            this.operation = DeserializeString(data, offset, operationStringBytesLength);
+            offset += operationStringBytesLength;
+            var armStringBytesLength = DeserializeLength(data, offset);
+            offset += 4;
+            this.arm = DeserializeString(data, offset, armStringBytesLength);
+            offset += armStringBytesLength;
             
             var trajectoryArrayLength = DeserializeLength(data, offset);
             offset += 4;
@@ -51,6 +67,8 @@ namespace RosMessageTypes.BaxterMoveit
         public override string ToString()
         {
             return "BaxterTrajectory: " +
+            "\noperation: " + operation.ToString() +
+            "\narm: " + arm.ToString() +
             "\ntrajectory: " + System.String.Join(", ", trajectory.ToList());
         }
     }
