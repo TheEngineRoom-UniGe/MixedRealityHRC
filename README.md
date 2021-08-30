@@ -15,3 +15,7 @@ Make sure you are using a version of Unity 2020.2.2 or newer.
 2) Download the ROS-TCP-Endpoint package from https://github.com/Unity-Technologies/ROS-TCP-Endpoint and add it to your ROS ws, then compile via catkin_make;
 3) Within the config folder of baxter_hrc, change the ROS_IP to the IP of the current machine, whereas under UNITY_IP specify the IP of the machine which runs the Unity simulation
 
+## Running the Simulation
+
+### On ROS
+MoveIt is used for robot motion planning: make sure to install the <your_robot>_moveit_config 
