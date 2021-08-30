@@ -29,5 +29,6 @@ Make sure you are using a version of Unity 2020.2.2 or newer.
 
 ## Deploy on HoloLens device
 
-1) Compile the Unity application with UWP build settings. Ensure Internet capabilities and spatial perception are ON in the player settings. Finally, deploy on device and run
+1) Within the config folder in the ROS package, change the UNITY_IP to that of the HoloLens device;
+2) Compile the Unity application with UWP build settings. Ensure Internet capabilities and spatial perception are ON in the player settings. Finally, deploy on device and run
 
