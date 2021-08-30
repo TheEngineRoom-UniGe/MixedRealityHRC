@@ -2,6 +2,7 @@
 Repo containing Unity project and ROS packages for developing mixed reality human-robot collaborative scenarios.
 
 ## Getting Started
+The instructions provided here assume a configuration in which 2 machines, one running the ROS environment, whereas the other runs the Unity simulation, are connected to the same local network. 
 
 ### Unity Steps
 Make sure you are using a version of Unity 2020.2.2 or newer. 
@@ -18,4 +19,12 @@ Make sure you are using a version of Unity 2020.2.2 or newer.
 ## Running the Simulation
 
 ### On ROS
-MoveIt is used for robot motion planning: make sure to install the <your_robot>_moveit_config 
+1) MoveIt is used for robot motion planning: make sure to install the <your_robot>_moveit_config from https://moveit.ros.org/robots/
+2) Launch the motion planner node and the server endpoint which enables communication with Unity via the launch/main.launch file
+
+### On Unity
+
+1) Start the simulation;
+2) Ensure the handshake between ROS and Unity is established; Communication issues may be related to Windows Defender Firewall (try deactivating it) or closed ports which need to be opened manually
+3) 
+
