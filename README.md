@@ -2,7 +2,7 @@
 Repo containing Unity project and ROS packages for developing mixed reality human-robot collaborative scenarios.
 
 ## Getting Started
-The instructions provided here assume a configuration in which 2 machines, one running the ROS environment, whereas the other runs the Unity simulation, are connected to the same local network. 
+The instructions provided here assume a configuration in which 2 machines, one running the ROS environment, whereas the other running the Unity simulation, are connected to the same local network. 
 
 ### Unity Steps
 Make sure you are using a version of Unity 2020.2.2 or newer. 
