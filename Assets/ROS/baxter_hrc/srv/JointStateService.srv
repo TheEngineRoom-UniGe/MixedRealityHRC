@@ -1,0 +1,3 @@
+std_msgs/String request
+---
+sensor_msgs/JointState joint_state_msg
