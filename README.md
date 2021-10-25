@@ -6,7 +6,7 @@ The instructions provided here assume a configuration in which 2 machines, one r
 
 ### Unity Steps
 Make sure you are using a version of Unity 2020.2.2 or newer. 
-1) Create a new Unity project, then copy-paste the content of this repo in the Asset folder;
+1) Download this Unity project and open it within your environment.
 2) Download the ROS-TCP Connector package from https://github.com/Unity-Technologies/ROS-TCP-Connector and add it to the Unity project, to enable connection to a ROS environment;
 3) Download the URDF Importer package from https://github.com/Unity-Technologies/URDF-Importer and add it to the Unity project to import your robot's URDF model. This project already contains models for Baxter and Panda robots.
 4) Within the Robotics tab under Unity's main manu, insert the IP of the machine running the ROS environment.
