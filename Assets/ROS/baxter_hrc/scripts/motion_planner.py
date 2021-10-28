@@ -40,8 +40,8 @@ class MotionPlanner:
         moveit_robot_state = RobotState()
         moveit_robot_state.joint_state = current_joint_state
         self.move_group.set_start_state(moveit_robot_state)
-        self.move_group.set_goal_tolerance(10e-6)
-        (plan, fraction) = self.move_group.compute_cartesian_path([destination_pose], 0.2, 0.0)
+        self.move_group.set_goal_tolerance(10e-3)
+        (plan, fraction) = self.move_group.compute_cartesian_path([destination_pose], 0.05, 0.0)
 
         if not plan:
             exception_str = """

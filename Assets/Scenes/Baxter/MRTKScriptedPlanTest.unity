@@ -11553,7 +11553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   robot: {fileID: 1015017068}
   ground: {fileID: 490889719}
-  steps: 50
+  steps: 20
   plannerServiceName: baxter_hrc_motion_planner
   jointStateServiceName: baxter_joint_states
   nextActionTopicName: next_action

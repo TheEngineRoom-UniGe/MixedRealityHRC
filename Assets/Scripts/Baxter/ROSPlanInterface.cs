@@ -21,8 +21,8 @@ public class ROSPlanInterface : MonoBehaviour
     // Offset variables for picking and placing objects
     private readonly Vector3 liftOffset = Vector3.up * 0.1f;
     private readonly Vector3 dropOffset = Vector3.up * 0.02f;
-    private readonly float depthOffset = 0.16f;
-    private readonly float heightOffset = 0.525f;
+    private readonly float depthOffset = 0.135f;
+    private readonly float heightOffset = 0.295f;
 
     // Scene objects
     private GameObject[] pickPoses;
