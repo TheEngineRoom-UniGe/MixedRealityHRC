@@ -115,7 +115,7 @@ def trajectory_callback(msg):
             limb_interface = baxter_interface.limb.Limb(arm)
 
             t = 1
-            step = 0.5 if i != 1 else 2
+            step = 0.1 if i != 1 else 0.2
             for point in msg.trajectory[i].joint_trajectory.points:
                 traj.add_point(point.positions, point.velocities, point.accelerations, t)
                 t += step

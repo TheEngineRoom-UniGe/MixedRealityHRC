@@ -1,11 +1,2 @@
-pick_and_place 1 component_handover 3
-pick_and_place 2 component_handover 3
-tool_handover 0
-put_back 0 pick_and_place 0
-component_handover 4
-component_handover 5 
-tool_handover 2
-component_handover 5
-put_back 2
-tool_handover 1 component_handover 4
-put_back 1
+component_handover 4 tool_handover 1
+pick_and_place 2 tool_handover 0
